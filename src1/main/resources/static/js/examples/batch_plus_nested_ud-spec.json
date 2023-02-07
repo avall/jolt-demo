@@ -1,0 +1,440 @@
+[
+  {
+    "operation": "modify-default-beta",
+    "spec": {
+      "embeddedProduct": {
+        "duns_uniq": "=join('_',@(3,inquiryDetail.customerReference[0]),@(1,organization.duns))",
+        "duns_uniq_gu": "=join('_',@(3,inquiryDetail.customerReference[0]),@(1,organization.corporateLinkage.globalUltimate.duns))",
+        "duns_uniq_du": "=join('_',@(3,inquiryDetail.customerReference[0]),@(1,organization.corporateLinkage.domesticUltimate.duns))",
+        "duns_uniq_hq": "=join('_',@(3,inquiryDetail.customerReference[0]),@(1,organization.corporateLinkage.headQuarter.duns))",
+        "duns_uniq_pr": "=join('_',@(3,inquiryDetail.customerReference[0]),@(1,organization.corporateLinkage.parent.duns))"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "embeddedProduct": {
+        "organization": "organization",
+        "duns_uniq": "duns_uniq",
+        "duns_uniq_gu": "duns_uniq_gu",
+        "duns_uniq_du": "duns_uniq_du",
+        "duns_uniq_hq": "duns_uniq_hq",
+        "duns_uniq_pr": "duns_uniq_pr"
+      },
+      "matchCandidates": {
+        "0": {
+          "displaySequence": "displaySequence",
+          "matchQualityInformation": {
+            "confidenceCode": "confidenceCode",
+            "matchGrade": "matchGrade",
+            "matchDataProfileComponents": "matchDataProfileComponents"
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "displaySequence": "[4].attributes.MatchQuality[0].value.DisplaySequence[].value",
+      "confidenceCode": "[4].attributes.MatchQuality[0].value.ConfidenceCode[].value",
+      "matchGrade": "[4].attributes.MatchQuality[0].value.MatchGrade[].value",
+      "matchDataProfileComponents": {
+        "*": {
+          "componentType": {
+            "Name": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.NameProfileCode[].value"
+            },
+            "Street Number": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.StreetNumberProfileCode[].value"
+            },
+            "Street Name": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.StreetNameProfileCode[].value"
+            },
+            "City": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.CityProfileCode[].value"
+            },
+            "State": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.StateProvinceProfileCode[].value"
+            },
+            "PO Box": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.POBoxProfileCode[].value"
+            },
+            "Phone": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.PhoneProfileCode[].value"
+            },
+            "Postal Code": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.ZIPProfileCode[].value"
+            },
+            "SIC": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.SICProfileCode[].value"
+            },
+            "Density": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.DensityProfileCode[].value"
+            },
+            "Uniqueness": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.UniquenessProfileCode[].value"
+            },
+            "DUNS": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.DUNSProfileCode[].value"
+            },
+            "National ID": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.NationalIDProfileCode[].value"
+            },
+            "URL": {
+              "@(2,componentValue)": "[4].attributes.MatchQuality[0].value.URLProfileCode[].value"
+            }
+          }
+        }
+      },
+      "organization": {
+        "#configuration/sources/DnB": "[4].crosswalks[0].type",
+        "#Batch Plus": "[4].attributes.DnBSource[].value",
+        "@(1,duns_uniq)": ["[4].attributes.DUNSNumber[].value", "[4].crosswalks[0].value"],
+        "dunsControlStatus": {
+          "isMarketable": "[4].attributes.MarketabilityIndicator[].value",
+          "lastUpdateDate": "[4].attributes.DnBLastUpdateDate[].value",
+          "operatingStatus": {
+            "description": ["[4].attributes.OrganizationDetail[0].value.OperatingStatusComment[].value",
+              "[4].attributes.OrganizationDetail[0].value.OperatingStatus[].value"]
+          }
+        },
+        "primaryName": "[4].attributes.Name[].value",
+        "tradeStyleNames": {
+          "*": {
+            "name": "[4].attributes.TradeStyleName[&1].value.OrganizationName[].value"
+          }
+        },
+        "telephone": {
+          "*": {
+            "telephoneNumber": "[5].sa.Phone[&1].value.Number[].value",
+            "isUnreachable": "[5].sa.Phone[&1].value.Unreachable[].value",
+            "isdCode": "[5].sa.Phone[&1].value.CountryCode[].value",
+            "#Phone": "[5].sa.Phone[&1].value.Type[].value",
+            "#true": "[5].sa.Phone[&1].value.PrimaryPhoneFlag[].value"
+          }
+        },
+        "fax": {
+          "*": {
+            "faxNumber": "[5].ma.Phone[&1].value.Number[].value",
+            "isUnreachable": "[5].ma.Phone[&1].value.Unreachable[].value",
+            "isdCode": "[5].ma.Phone[&1].value.CountryCode[].value",
+            "#Fax": "[5].ma.Phone[&1].value.Type[].value",
+            "#true": "[5].ma.Phone[&1].value.PrimaryPhoneFlag[].value"
+          }
+        },
+        "websiteAddress": {
+          "*": {
+            "url": "[4].attributes.WebsiteURL[].value"
+          }
+        },
+        "isStandalone": "[4].attributes.OrganizationDetail[0].value.Standalone[].value",
+        "controlOwnershipDate": "[4].attributes.OrganizationDetail[0].value.OwnershipDate[].value",
+        "controlOwnershipType": {
+          "description": "[4].attributes.OrganizationDetail[0].value.OwnershipType[].value"
+        },
+        "startDate": "[4].attributes.OrganizationDetail[0].value.StartYear[].value",
+        "primaryAddress": {
+          "streetAddress": {
+            "line1": {
+              "@": "[5].sa.Addresses[0].value.AddressLine1[].value",
+              "@(1,line2)": "[5].sa.Addresses[0].value.AddressLine2[].value",
+              "#Shipping": "[5].sa.Addresses[0].value.AddressType[].value",
+              "#true": "[5].sa.Addresses[0].value.Primary[].value",
+              "@(2,postalCode)": "[5].sa.Addresses[0].value.PostalCode[].value",
+              "@(2,addressLocality)": {
+                "name": "[5].sa.Addresses[0].value.City[].value"
+              },
+              "@(2,addressRegion)": {
+                "name": "[5].sa.Addresses[0].value.StateProvince[].value"
+              },
+              "@(2,latitude)": "[5].sa.Addresses[0].value.DnBLatitude[].value",
+              "@(2,longitude)": "[5].sa.Addresses[0].value.DnBLongitude[].value",
+              "@(2,isRegisteredAddress)": "[5].sa.Addresses[0].value.Registered[].value",
+              "@(2,isResidentialAddress)": "[5].sa.Addresses[0].value.Residential[].value",
+              "@(2,addressCountry)": {
+                "name": "[5].sa.Addresses[0].value.Country[].value"
+              }
+            }
+          }
+        },
+        "mailingAddress": {
+          "streetAddress": {
+            "line1": {
+              "@": "[5].ma.Addresses[0].value.AddressLine1[].value",
+              "@(1,line2)": "[5].ma.Addresses[0].value.AddressLine2[].value",
+              "#Mailing": "[5].ma.Addresses[0].value.AddressType[].value",
+              "@(2,postalCode)": "[5].ma.Addresses[0].value.PostalCode[].value",
+              "@(2,addressLocality)": {
+                "name": "[5].ma.Addresses[0].value.City[].value"
+              },
+              "@(2,addressRegion)": {
+                "name": "[5].ma.Addresses[0].value.StateProvince[].value"
+              },
+              "@(2,latitude)": "[5].ma.Addresses[0].value.DnBLatitude[].value",
+              "@(2,longitude)": "[5].ma.Addresses[0].value.DnBLongitude[].value",
+              "@(2,isRegisteredAddress)": "[5].ma.Addresses[0].value.Registered[].value",
+              "@(2,isResidentialAddress)": "[5].ma.Addresses[0].value.Residential[].value",
+              "@(2,addressCountry)": {
+                "name": "[5].ma.Addresses[0].value.Country[].value"
+              }
+            }
+          }
+        },
+        "financials": {
+          "*": {
+            "financialStatementToDate": "[4].attributes.KeyFinancialFiguresOverview[&1].value.FinancialStatementToDate[].value",
+            "financialStatementDuration": "[4].attributes.KeyFinancialFiguresOverview[&1].value.FinancialPeriodDuration[].value",
+            "yearlyRevenue": {
+              "*": {
+                "value": "[4].attributes.KeyFinancialFiguresOverview[&3].value.SalesRevenueAmount[&1].value",
+                "currency": "[4].attributes.KeyFinancialFiguresOverview[&3].value.SalesRevenueCurrencyCode[&1].value"
+              }
+            }
+          }
+        },
+        "industryCodes": {
+          "*": {
+            "code": "[4].attributes.IndustryCode[&1].value.IndustryCode[].value",
+            "description": "[4].attributes.IndustryCode[&1].value.IndustryCodeDescription[].value",
+            "typeDescription": "[4].attributes.IndustryCode[&1].value.Type[].value",
+            "typeDnBCode": "[4].attributes.IndustryCode[&1].value.DNBCode[].value"
+          }
+        },
+        "isImporter": "[4].attributes.ActivitiesAndOperations[0].value.ImportIndicator[].value",
+        "isExporter": "[4].attributes.ActivitiesAndOperations[0].value.ExportIndicator[].value",
+        "isAgent": "[4].attributes.ActivitiesAndOperations[0].value.AgentIndicator[].value",
+        "numberOfEmployees": {
+          "*": {
+            "value": "[4].attributes.EmployeeDetails[&1].value.IndividualTotalEmployeeQuantity[].value",
+            "reliabilityDescription": "[4].attributes.EmployeeDetails[&1].value.IndividualReliabilityText[].value"
+          }
+        },
+        "businessEntityType": {
+          "description": "[4].attributes.LegalStatusCode[].value"
+        },
+        "registrationNumbers": {
+          "*": {
+            "registrationNumber": "[4].attributes.Identifiers[&1].value.ID[].value",
+            "typeDescription": "[4].attributes.Identifiers[&1].value.Type[].value"
+          }
+        },
+        "corporateLinkage": {
+          "familytreeRolesPlayed": {
+            "*": {
+              "description": "[4].attributes.OrganizationDetail[0].value.MemberRole[].value"
+            }
+          },
+          "globalUltimate": {
+            "duns": {
+              "@(5,duns_uniq_gu)": [
+                "[0].attributes.DUNSNumber[].value",
+                "[4].attributes.DUNSHierarchy[0].value.GlobalUltimateDUNS[].value",
+                "[0].crosswalks[0].value"
+              ],
+              "#configuration/entityTypes/Organization": "[0].type",
+              "#configuration/sources/DnB": "[0].crosswalks[0].type",
+              "#DnB Linkage": "[0].attributes.VendorOrganizationType[].value",
+              "#Batch Plus": "[0].attributes.DnBSource[].value",
+              "@(1,primaryName)": ["[0].attributes.Name[0].value", "[4].attributes.DUNSHierarchy[0].value.GlobalUltimateOrganization[].value"],
+              "@(1,primaryAddress)": {
+                "streetAddress": {
+                  "line1": {
+                    "@": "[0].attributes.Addresses[0].value.AddressLine1[].value",
+                    "@(1,line2)": "[0].attributes.Addresses[0].value.AddressLine2[].value",
+                    "#Shipping": "[0].attributes.Addresses[0].value.AddressType[].value",
+                    "#true": "[0].attributes.Addresses[0].value.Primary[].value",
+                    "@(2,postalCode)": "[0].attributes.Addresses[0].value.PostalCode[].value",
+                    "@(2,addressLocality)": {
+                      "name": "[0].attributes.Addresses[0].value.City[].value"
+                    },
+                    "@(2,addressRegion)": {
+                      "name": "[0].attributes.Addresses[0].value.StateProvince[].value"
+                    },
+                    "@(2,addressCountry)": {
+                      "name": "[0].attributes.Addresses[0].value.Country[].value"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "domesticUltimate": {
+            "duns": {
+              "@(5,duns_uniq_du)": [
+                "[1].attributes.DUNSNumber[].value",
+                "[4].attributes.DUNSHierarchy[0].value.DomesticUltimateDUNS[].value",
+                "[1].crosswalks[0].value"
+              ],
+              "#configuration/entityTypes/Organization": "[1].type",
+              "#configuration/sources/DnB": "[1].crosswalks[0].type",
+              "#DnB Linkage": "[1].attributes.VendorOrganizationType[].value",
+              "#Batch Plus": "[1].attributes.DnBSource[].value",
+              "@(1,primaryName)": ["[1].attributes.Name[0].value", "[4].attributes.DUNSHierarchy[0].value.DomesticUltimateOrganization[].value"],
+              "@(1,primaryAddress)": {
+                "streetAddress": {
+                  "line1": {
+                    "@": "[1].attributes.Addresses[0].value.AddressLine1[].value",
+                    "@(1,line2)": "[1].attributes.Addresses[0].value.AddressLine2[].value",
+                    "#Shipping": "[1].attributes.Addresses[0].value.AddressType[].value",
+                    "#true": "[1].attributes.Addresses[0].value.Primary[].value",
+                    "@(2,postalCode)": "[1].attributes.Addresses[0].value.PostalCode[].value",
+                    "@(2,addressLocality)": {
+                      "name": "[1].attributes.Addresses[0].value.City[].value"
+                    },
+                    "@(2,addressRegion)": {
+                      "name": "[1].attributes.Addresses[0].value.StateProvince[].value"
+                    },
+                    "@(2,addressCountry)": {
+                      "name": "[1].attributes.Addresses[0].value.Country[].value"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "headQuarter": {
+            "duns": {
+              "@(5,duns_uniq_hq)": [
+                "[2].attributes.DUNSNumber[].value",
+                "[4].attributes.DUNSHierarchy[0].value.HeadquartersDUNS[].value",
+                "[2].crosswalks[0].value"
+              ],
+              "#configuration/entityTypes/Organization": "[2].type",
+              "#configuration/sources/DnB": "[2].crosswalks[0].type",
+              "#DnB Linkage": "[2].attributes.VendorOrganizationType[].value",
+              "#Batch Plus": "[2].attributes.DnBSource[].value",
+              "@(1,primaryName)": ["[2].attributes.Name[0].value", "[4].attributes.DUNSHierarchy[0].value.HeadquartersOrganization[].value"],
+              "@(1,primaryAddress)": {
+                "streetAddress": {
+                  "line1": {
+                    "@": "[2].attributes.Addresses[0].value.AddressLine1[].value",
+                    "@(1,line2)": "[2].attributes.Addresses[0].value.AddressLine2[].value",
+                    "#Shipping": "[2].attributes.Addresses[0].value.AddressType[].value",
+                    "#true": "[2].attributes.Addresses[0].value.Primary[].value",
+                    "@(2,postalCode)": "[2].attributes.Addresses[0].value.PostalCode[].value",
+                    "@(2,addressLocality)": {
+                      "name": "[2].attributes.Addresses[0].value.City[].value"
+                    },
+                    "@(2,addressRegion)": {
+                      "name": "[2].attributes.Addresses[0].value.StateProvince[].value"
+                    },
+                    "@(2,addressCountry)": {
+                      "name": "[2].attributes.Addresses[0].value.Country[].value"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "parent": {
+            "duns": {
+              "@(5,duns_uniq_pr)": [
+                "[3].attributes.DUNSNumber[].value",
+                "[4].attributes.DUNSHierarchy[0].value.ParentDUNS[].value",
+                "[3].crosswalks[0].value"
+              ],
+              "#configuration/entityTypes/Organization": "[3].type",
+              "#configuration/sources/DnB": "[3].crosswalks[0].type",
+              "#DnB Linkage": "[3].attributes.VendorOrganizationType[].value",
+              "#Batch Plus": "[3].attributes.DnBSource[].value",
+              "@(1,primaryName)": ["[3].attributes.Name[0].value", "[4].attributes.DUNSHierarchy[0].value.ParentOrganization[].value"],
+              "@(1,primaryAddress)": {
+                "streetAddress": {
+                  "line1": {
+                    "@": "[3].attributes.Addresses[0].value.AddressLine1[].value",
+                    "@(1,line2)": "[3].attributes.Addresses[0].value.AddressLine2[].value",
+                    "#Shipping": "[3].attributes.Addresses[0].value.AddressType[].value",
+                    "#true": "[3].attributes.Addresses[0].value.Primary[].value",
+                    "@(2,postalCode)": "[3].attributes.Addresses[0].value.PostalCode[].value",
+                    "@(2,addressLocality)": {
+                      "name": "[3].attributes.Addresses[0].value.City[].value"
+                    },
+                    "@(2,addressRegion)": {
+                      "name": "[3].attributes.Addresses[0].value.StateProvince[].value"
+                    },
+                    "@(2,addressCountry)": {
+                      "name": "[3].attributes.Addresses[0].value.Country[].value"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "0": {
+        "type": "[0].type",
+        "crosswalks": "[0].crosswalks",
+        "attributes": "[0].attributes"
+      },
+      "1": {
+        "type": "[1].type",
+        "crosswalks": "[1].crosswalks",
+        "attributes": "[1].attributes"
+      },
+      "2": {
+        "type": "[2].type",
+        "crosswalks": "[2].crosswalks",
+        "attributes": "[2].attributes"
+      },
+      "3": {
+        "type": "[3].type",
+        "crosswalks": "[3].crosswalks",
+        "attributes": "[3].attributes"
+      },
+      "4": {
+        "type": "[4].type",
+        "crosswalks": "[4].crosswalks",
+        "attributes": "[4].attributes"
+      },
+      "5": {
+        "ma": {
+          "Addresses": {
+            "*": "[4].attributes.Addresses[]"
+          },
+          "Phone": {
+            "*": "[4].attributes.Phone[]"
+          }
+        },
+        "sa": {
+          "Addresses": {
+            "*": "[4].attributes.Addresses[]"
+          },
+          "Phone": {
+            "*": "[4].attributes.Phone[]"
+          }
+        }
+      }
+    }
+  },
+  // section below doesn't make useful actions - only replaces null to { "attributes": {}} - empty organization
+  // why? - we need it in case when only one organization here and other are null - in this case last modifier will
+  // create array[] instead of array[array[]] and crash conversion to List<List<>>
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "*": {
+        "attributes": {
+          "SomeValue": {
+            "*": {
+              "value": "&"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "*": "[0]"
+    }
+  }
+]

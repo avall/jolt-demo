@@ -1,0 +1,696 @@
+{
+  "transactionDetail": {
+    "transactionID": "rrt-0ef7ce98de80661f9-c-eu-17811-1233270-10",
+    "transactionTimestamp": "2022-01-11T05:21:13.609Z",
+    "inLanguage": "en-US",
+    "serviceVersion": "1"
+  },
+  "inquiryDetail": {
+    "inLanguage": "en-US",
+    "name": "AVNET EUROPE COMM VA",
+    "address": {
+      "countryISOAlpha2Code": "BE",
+      "addressLocality": "MACHELEN",
+      "addressRegion": "",
+      "postalCode": "1831",
+      "streetAddressLine": {
+        "line1": "KOUTERVELDSTRAAT 20",
+        "line2": ""
+      }
+    },
+    "confidenceLowerLevelThresholdValue": 8,
+    "productID": "cmpelf",
+    "productVersion": "v1",
+    "customerReference": [
+      "DEBA1"
+    ]
+  },
+  "candidatesMatchedQuantity": 1,
+  "matchDataCriteria": "Name and Address Lookup",
+  "matchCandidates": [
+    {
+      "displaySequence": 1,
+      "organization": {
+        "duns": "371862363",
+        "websiteAddress": [],
+        "dunsControlStatus": {
+          "operatingStatus": {
+            "description": "Out of business",
+            "dnbCode": 403
+          },
+          "isMailUndeliverable": false
+        },
+        "primaryName": "Avnet It In vereffening",
+        "tradeStyleNames": [],
+        "telephone": [
+          {
+            "telephoneNumber": "027099000",
+            "isUnreachable": false
+          }
+        ],
+        "primaryAddress": {
+          "addressCountry": {
+            "isoAlpha2Code": "BE",
+            "name": "Belgium"
+          },
+          "addressLocality": {
+            "name": "Machelen (Diegem )"
+          },
+          "addressRegion": {},
+          "postalCode": "1831",
+          "postalCodeExtension": null,
+          "streetAddress": {
+            "line1": "Kouterveldstraat 20",
+            "line2": null
+          }
+        },
+        "mailingAddress": {
+          "addressCountry": {
+            "isoAlpha2Code": "BE",
+            "name": "Belgium"
+          },
+          "addressLocality": {},
+          "addressRegion": {},
+          "postalCode": null,
+          "postalCodeExtension": null,
+          "streetAddress": {}
+        },
+        "registrationNumbers": [
+          {
+            "registrationNumber": "0474603677",
+            "typeDescription": "Enterprise Number (BE)",
+            "typeDnBCode": 800
+          }
+        ],
+        "mostSeniorPrincipals": [],
+        "isStandalone": true,
+        "corporateLinkage": {}
+      },
+      "matchQualityInformation": {
+        "confidenceCode": 8,
+        "matchGrade": "BAAAZZZAFFF",
+        "matchGradeComponentsCount": 11,
+        "matchGradeComponents": [
+          {
+            "componentType": "Name",
+            "componentRating": "B"
+          },
+          {
+            "componentType": "Street Number",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Street Name",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "City",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "State",
+            "componentRating": "Z"
+          },
+          {
+            "componentType": "PO Box",
+            "componentRating": "Z"
+          },
+          {
+            "componentType": "Phone",
+            "componentRating": "Z"
+          },
+          {
+            "componentType": "Postal Code",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Density",
+            "componentRating": "F"
+          },
+          {
+            "componentType": "Uniqueness",
+            "componentRating": "F"
+          },
+          {
+            "componentType": "Sic",
+            "componentRating": "F"
+          }
+        ],
+        "matchDataProfile": "0101010198989800000000000098",
+        "matchDataProfileComponentsCount": 14,
+        "matchDataProfileComponents": [
+          {
+            "componentType": "Name",
+            "componentValue": "01"
+          },
+          {
+            "componentType": "Street Number",
+            "componentValue": "01"
+          },
+          {
+            "componentType": "Street Name",
+            "componentValue": "01"
+          },
+          {
+            "componentType": "City",
+            "componentValue": "01"
+          },
+          {
+            "componentType": "State",
+            "componentValue": "98"
+          },
+          {
+            "componentType": "PO Box",
+            "componentValue": "98"
+          },
+          {
+            "componentType": "Phone",
+            "componentValue": "98"
+          },
+          {
+            "componentType": "Postal Code",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "DUNS",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "SIC",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "Density",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "Uniqueness",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "National ID",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "URL",
+            "componentValue": "98"
+          }
+        ],
+        "nameMatchScore": 44.036366
+      }
+    }
+  ],
+  "cleanseAndStandardizeInformation": {},
+  "embeddedProduct": {
+    "productVersion": "1",
+    "productID": "cmpelf",
+    "organization": {
+      "businessEntityType": {
+        "description": "Corporation",
+        "dnbCode": 451
+      },
+      "duns": "371862363",
+      "incorporatedDate": "2001-04-12",
+      "activities": [
+        {
+          "description": "De handel in technische materialen en apparaten, grondstoffen en halffabrikaten en verder het verlenen van technische diensten.",
+          "language": {
+            "description": "Belgian Dutch",
+            "dnbCode": 36
+          }
+        }
+      ],
+      "controlOwnershipType": {},
+      "primaryName": "Avnet It In vereffening",
+      "defaultCurrency": "EUR",
+      "startDate": "2001-04-12",
+      "formerPrimaryNames": [],
+      "registrationNumbers": [
+        {
+          "registrationNumber": "2100262806",
+          "typeDescription": "Branch Unit Number (BE)",
+          "typeDnBCode": 1800
+        },
+        {
+          "registrationNumber": "0474603677",
+          "typeDescription": "Enterprise Number (BE)",
+          "typeDnBCode": 800
+        }
+      ],
+      "summary": [],
+      "controlOwnershipDate": null,
+      "isStandalone": true,
+      "legalForm": {},
+      "dunsControlStatus": {
+        "operatingStatus": {
+          "description": "Out of business",
+          "dnbCode": 403
+        },
+        "isMarketable": false,
+        "isMailUndeliverable": false,
+        "isTelephoneDisconnected": false,
+        "isDelisted": false,
+        "subjectHandlingDetails": [],
+        "fullReportDate": "2009-08-01"
+      },
+      "telephone": [
+        {
+          "telephoneNumber": "27099000",
+          "isdCode": "32",
+          "isUnreachable": false
+        }
+      ],
+      "fax": [
+        {
+          "faxNumber": "27099800",
+          "isdCode": "32"
+        }
+      ],
+      "socioEconomicInformation": {},
+      "franchiseOperationType": {},
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Global Ultimate",
+            "dnbCode": 12775
+          },
+          {
+            "description": "Domestic Ultimate",
+            "dnbCode": 12774
+          },
+          {
+            "description": "Parent/Headquarters",
+            "dnbCode": 9141
+          }
+        ],
+        "hierarchyLevel": 1,
+        "globalUltimateFamilyTreeMembersCount": 5,
+        "globalUltimate": {
+          "duns": "968780879",
+          "primaryName": "Reltio, Inc.",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "United States",
+              "isoAlpha2Code": "US",
+              "fipsCode": "US"
+            },
+            "continentalRegion": {
+              "name": "North America"
+            },
+            "addressLocality": {
+              "name": "Redwood City"
+            },
+            "addressRegion": {
+              "name": "California",
+              "abbreviatedName": "CA"
+            },
+            "postalCode": "94065-5234",
+            "streetAddress": {
+              "line1": "100 Marine Pkwy Ste 275",
+              "line2": null
+            }
+          }
+        },
+        "domesticUltimate": {
+          "duns": "968780879",
+          "primaryName": "Reltio, Inc.",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "United States",
+              "isoAlpha2Code": "US",
+              "fipsCode": "US"
+            },
+            "continentalRegion": {
+              "name": "North America"
+            },
+            "addressLocality": {
+              "name": "Redwood City"
+            },
+            "addressRegion": {
+              "name": "California",
+              "abbreviatedName": "CA"
+            },
+            "postalCode": "94065-5234",
+            "streetAddress": {
+              "line1": "100 Marine Pkwy Ste 275",
+              "line2": null
+            }
+          }
+        },
+        "parent": {
+          "duns": "968780879",
+          "primaryName": "Reltio, Inc.",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "United States",
+              "isoAlpha2Code": "US",
+              "fipsCode": "US"
+            },
+            "continentalRegion": {
+              "name": "North America"
+            },
+            "addressLocality": {
+              "name": "Redwood City"
+            },
+            "addressRegion": {
+              "name": "California",
+              "abbreviatedName": "CA"
+            },
+            "postalCode": "94065-5234",
+            "streetAddress": {
+              "line1": "100 Marine Pkwy Ste 275",
+              "line2": null
+            }
+          }
+        },
+        "headQuarter": {
+          "duns": "968780879",
+          "primaryName": "Reltio, Inc.",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "United States",
+              "isoAlpha2Code": "US",
+              "fipsCode": "US"
+            },
+            "continentalRegion": {
+              "name": "North America"
+            },
+            "addressLocality": {
+              "name": "Redwood City"
+            },
+            "addressRegion": {
+              "name": "California",
+              "abbreviatedName": "CA"
+            },
+            "postalCode": "94065-5234",
+            "streetAddress": {
+              "line1": "100 Marine Pkwy Ste 275",
+              "line2": null
+            }
+          }
+        }
+      },
+      "isAgent": null,
+      "thirdPartyFinancials": {},
+      "banks": [
+        {
+          "name": "ING BELGIë"
+        }
+      ],
+      "thirdPartyAssessment": [],
+      "isImporter": null,
+      "isExporter": null,
+      "mostSeniorPrincipals": [],
+      "currentPrincipals": [],
+      "dnbAssessment": {},
+      "financials": [
+        {
+          "financialStatementToDate": "2011-06-30",
+          "financialStatementDuration": null,
+          "informationScopeDescription": "Individual",
+          "informationScopeDnBCode": 9066,
+          "reliabilityDescription": null,
+          "reliabilityDnBCode": null,
+          "unitCode": "SingleUnits",
+          "accountantName": null,
+          "yearlyRevenue": [],
+          "netProfitLoss": [],
+          "netWorth": [
+            {
+              "value": 511710,
+              "currency": "EUR"
+            }
+          ]
+        },
+        {
+          "netProfitLoss": [],
+          "netWorth": [
+            {
+              "value": 734560,
+              "currency": "USD"
+            }
+          ]
+        }
+      ],
+      "stockExchanges": [],
+      "operations": [],
+      "mailingAddress": {},
+      "tradeStyleNames": [],
+      "numberOfEmployees": [
+        {
+          "value": 1,
+          "minimumValue": 1,
+          "maximumValue": 4,
+          "employeeFiguresDate": "2008-06-30",
+          "informationScopeDescription": "Individual",
+          "informationScopeDnBCode": 9066,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": []
+        }
+      ],
+      "registeredAddress": {
+        "language": {
+          "description": "Belgian Dutch",
+          "dnbCode": 36
+        },
+        "addressCountry": {
+          "name": "Belgium",
+          "isoAlpha2Code": "BE"
+        },
+        "addressLocality": {
+          "name": "Machelen"
+        },
+        "minorTownName": "Diegem",
+        "addressRegion": {},
+        "addressCounty": {
+          "name": "Halle-Vilvoorde"
+        },
+        "postalCode": "1831",
+        "postalCodePosition": {
+          "description": "Post Code presented before Town/City name",
+          "dnbCode": 1009
+        },
+        "streetNumber": "20",
+        "streetName": "Kouterveldstraat",
+        "streetAddress": {},
+        "postOfficeBox": {}
+      },
+      "numberOfEmployeesHistory": [
+        {
+          "value": 1,
+          "minimumValue": null,
+          "maximumValue": null,
+          "employeeFiguresDate": "2007-03-31",
+          "informationScopeDescription": "Individual",
+          "informationScopeDnBCode": 9066,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": []
+        },
+        {
+          "value": 1,
+          "minimumValue": null,
+          "maximumValue": null,
+          "employeeFiguresDate": "2006-03-31",
+          "informationScopeDescription": "Individual",
+          "informationScopeDnBCode": 9066,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": []
+        },
+        {
+          "value": 1,
+          "minimumValue": null,
+          "maximumValue": null,
+          "employeeFiguresDate": "2005-03-31",
+          "informationScopeDescription": "Individual",
+          "informationScopeDnBCode": 9066,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": []
+        },
+        {
+          "value": 1,
+          "minimumValue": 1,
+          "maximumValue": 4,
+          "employeeFiguresDate": "2004-06-30",
+          "informationScopeDescription": "Individual",
+          "informationScopeDnBCode": 9066,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": []
+        },
+        {
+          "value": 2,
+          "minimumValue": null,
+          "maximumValue": null,
+          "employeeFiguresDate": "2004-03-31",
+          "informationScopeDescription": "Individual",
+          "informationScopeDnBCode": 9066,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": []
+        },
+        {
+          "value": 6,
+          "minimumValue": null,
+          "maximumValue": null,
+          "employeeFiguresDate": "2002-03-31",
+          "informationScopeDescription": "Individual",
+          "informationScopeDnBCode": 9066,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": []
+        }
+      ],
+      "capitalDetails": [
+        {
+          "capitalType": {
+            "description": "Issued",
+            "dnbCode": 1017
+          },
+          "startDate": "2011-06-30",
+          "capitalAmount": {
+            "value": 62000,
+            "currency": "EUR"
+          }
+        },
+        {
+          "capitalType": {
+            "description": "Paid Up",
+            "dnbCode": 1018
+          },
+          "startDate": "2011-06-30",
+          "capitalAmount": {
+            "value": 62000,
+            "currency": "EUR"
+          }
+        }
+      ],
+      "websiteAddress": [],
+      "primaryAddress": {
+        "language": {
+          "description": "Belgian Dutch",
+          "dnbCode": 36
+        },
+        "addressCountry": {
+          "name": "Belgium",
+          "isoAlpha2Code": "BE",
+          "fipsCode": "BE"
+        },
+        "continentalRegion": {
+          "name": "Europe"
+        },
+        "addressLocality": {
+          "name": "Machelen"
+        },
+        "minorTownName": "Diegem",
+        "addressRegion": {},
+        "addressCounty": {
+          "name": "Halle-Vilvoorde",
+          "fipsCode": null
+        },
+        "postalCode": "1831",
+        "postalCodePosition": {
+          "description": "Post Code presented before Town/City name",
+          "dnbCode": 1009
+        },
+        "streetNumber": "20",
+        "streetName": "Kouterveldstraat",
+        "streetAddress": {
+          "line1": "Kouterveldstraat 20",
+          "line2": null
+        },
+        "postOfficeBox": {},
+        "latitude": 50.88469,
+        "longitude": 4.452816,
+        "geographicalPrecision": {
+          "description": "Street Address Centroid",
+          "dnbCode": 30257
+        },
+        "isRegisteredAddress": true,
+        "isResidentialAddress": null,
+        "statisticalArea": {},
+        "locationOwnership": {},
+        "premisesArea": {},
+        "isManufacturingLocation": null,
+        "congressionalDistricts": []
+      },
+      "competitors": [],
+      "industryCodes": [
+        {
+          "code": "325194",
+          "description": "Cyclic Crude, Intermediate, and Gum and Wood Chemical Manufacturing",
+          "typeDescription": "North American Industry Classification System 2017",
+          "typeDnBCode": 30832,
+          "priority": 2
+        },
+        {
+          "code": "541512",
+          "description": "Computer Systems Design Services",
+          "typeDescription": "North American Industry Classification System 2017",
+          "typeDnBCode": 30832,
+          "priority": 1
+        },
+        {
+          "code": "2865",
+          "description": "Mfg cyclic crudes/intermediates/dyes",
+          "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+          "typeDnBCode": 399,
+          "priority": 2
+        },
+        {
+          "code": "62020",
+          "description": "Activities with regard to computer consultancy",
+          "typeDescription": "Belgium NACE 2008",
+          "typeDnBCode": 19307,
+          "priority": 1
+        },
+        {
+          "code": "28650000",
+          "description": "Cyclic crudes and intermediates",
+          "typeDescription": "D&B Standard Industry Code",
+          "typeDnBCode": 3599,
+          "priority": 2
+        },
+        {
+          "code": "1119",
+          "description": "Information Technology Services",
+          "typeDescription": "D&B Hoovers Industry Code",
+          "typeDnBCode": 25838,
+          "priority": 1
+        },
+        {
+          "code": "7379",
+          "description": "Computer related services",
+          "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+          "typeDnBCode": 399,
+          "priority": 1
+        },
+        {
+          "code": "73790200",
+          "description": "Computer related consulting services",
+          "typeDescription": "D&B Standard Industry Code",
+          "typeDnBCode": 3599,
+          "priority": 1
+        },
+        {
+          "code": "I",
+          "description": "Services",
+          "typeDescription": "D&B Standard Major Industry Code",
+          "typeDnBCode": 24657,
+          "priority": 1
+        },
+        {
+          "code": "6203",
+          "description": "Computer facilities management activities",
+          "typeDescription": "NACE Revision 2",
+          "typeDnBCode": 29104,
+          "priority": 1
+        }
+      ]
+    },
+    "inLanguage": "en-US"
+  }
+}

@@ -1,0 +1,574 @@
+{
+  "data": {
+    "transactionDetail": {
+      "transactionID": "rrt-040d96222d047da9a-c-eu-26080-514698-18",
+      "transactionTimestamp": "2019-05-23T06:05:21.019Z",
+      "inLanguage": "en-US",
+      "serviceVersion": "1"
+    },
+    "inquiryDetail": {
+      "inLanguage": "auto",
+      "name": "Dhl Express (usa), Inc.",
+      "address": {
+        "countryISOAlpha2Code": "US",
+        "postalCode": "941073102",
+        "streetAddressLine": {
+          "line1": "401 23rd St"
+        }
+      },
+      "customerReference": [
+        "DEBA1"
+      ],
+      "candidateMaximumQuantity": 25,
+      "confidenceLowerLevelThresholdValue": 7,
+      "isCleanseAndStandardizeInformationRequired": true
+    },
+    "candidatesMatchedQuantity": 3,
+    "matchDataCriteria": "Name and Address Lookup",
+    "matchCandidates": [
+      {
+        "displaySequence": 1,
+        "organization": {
+          "duns": "831953216",
+          "websiteAddress": [],
+          "dunsControlStatus": {
+            "operatingStatus": {
+              "description": "Active",
+              "dnbCode": 9074
+            },
+            "isMailUndeliverable": false
+          },
+          "primaryName": "DHL EXPRESS (USA), INC.",
+          "tradeStyleNames": [],
+          "telephone": [
+            {
+              "telephoneNumber": "4158267338",
+              "isUnreachable": false
+            }
+          ],
+          "primaryAddress": {
+            "addressCountry": {
+              "isoAlpha2Code": "US",
+              "name": "UNITED STATES"
+            },
+            "addressLocality": {
+              "name": "SAN FRANCISCO"
+            },
+            "addressRegion": {
+              "name": null,
+              "abbreviatedName": "CA"
+            },
+            "postalCode": "94107",
+            "postalCodeExtension": "3102",
+            "streetAddress": {
+              "line1": "401 23RD ST",
+              "line2": null
+            }
+          },
+          "mailingAddress": {
+            "addressCountry": {
+              "isoAlpha2Code": "US",
+              "name": "UNITED STATES"
+            },
+            "addressLocality": {},
+            "addressRegion": {},
+            "postalCode": null,
+            "postalCodeExtension": null,
+            "streetAddress": {}
+          },
+          "registrationNumbers": [],
+          "mostSeniorPrincipals": [
+            {
+              "fullName": "ELIZABETH  FITZGERALD"
+            }
+          ],
+          "isStandalone": false,
+          "corporateLinkage": {
+            "familytreeRolesPlayed": [
+              {
+                "description": "Branch / Division",
+                "dnbCode": 9140
+              }
+            ]
+          }
+        },
+        "matchQualityInformation": {
+          "confidenceCode": 10,
+          "matchGrade": "AAAAAZZAFFZ",
+          "matchGradeComponentsCount": 11,
+          "matchGradeComponents": [
+            {
+              "componentType": "Name",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "Street Number",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "Street Name",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "City",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "State",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "PO Box",
+              "componentRating": "Z"
+            },
+            {
+              "componentType": "Phone",
+              "componentRating": "Z"
+            },
+            {
+              "componentType": "Postal Code",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "Density",
+              "componentRating": "F"
+            },
+            {
+              "componentType": "Uniqueness",
+              "componentRating": "F"
+            },
+            {
+              "componentType": "Sic",
+              "componentRating": "Z"
+            }
+          ],
+          "matchDataProfile": "0000009999989800000000009898",
+          "matchDataProfileComponentsCount": 14,
+          "matchDataProfileComponents": [
+            {
+              "componentType": "Name",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Street Number",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Street Name",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "City",
+              "componentValue": "99"
+            },
+            {
+              "componentType": "State",
+              "componentValue": "99"
+            },
+            {
+              "componentType": "PO Box",
+              "componentValue": "98"
+            },
+            {
+              "componentType": "Phone",
+              "componentValue": "98"
+            },
+            {
+              "componentType": "Postal Code",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "DUNS",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "SIC",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Density",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Uniqueness",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "National ID",
+              "componentValue": "98"
+            },
+            {
+              "componentType": "URL",
+              "componentValue": "98"
+            }
+          ],
+          "nameMatchScore": 100
+        }
+      },
+      {
+        "displaySequence": 2,
+        "organization": {
+          "duns": "019930060",
+          "websiteAddress": [],
+          "dunsControlStatus": {
+            "operatingStatus": {
+              "description": "Out of business",
+              "dnbCode": 403
+            },
+            "isMailUndeliverable": false
+          },
+          "primaryName": "DHL EXPRESS",
+          "tradeStyleNames": [],
+          "telephone": [],
+          "primaryAddress": {
+            "addressCountry": {
+              "isoAlpha2Code": "US",
+              "name": "UNITED STATES"
+            },
+            "addressLocality": {
+              "name": "SAN FRANCISCO"
+            },
+            "addressRegion": {
+              "name": null,
+              "abbreviatedName": "CA"
+            },
+            "postalCode": "94107",
+            "postalCodeExtension": "3102",
+            "streetAddress": {
+              "line1": "401 23RD ST",
+              "line2": null
+            }
+          },
+          "mailingAddress": {
+            "addressCountry": {
+              "isoAlpha2Code": "US",
+              "name": "UNITED STATES"
+            },
+            "addressLocality": {},
+            "addressRegion": {},
+            "postalCode": null,
+            "postalCodeExtension": null,
+            "streetAddress": {}
+          },
+          "registrationNumbers": [],
+          "mostSeniorPrincipals": [
+            {
+              "fullName": "MIKE  CRAIG"
+            }
+          ],
+          "isStandalone": true,
+          "corporateLinkage": {}
+        },
+        "matchQualityInformation": {
+          "confidenceCode": 10,
+          "matchGrade": "AAAAAZZAFFZ",
+          "matchGradeComponentsCount": 11,
+          "matchGradeComponents": [
+            {
+              "componentType": "Name",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "Street Number",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "Street Name",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "City",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "State",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "PO Box",
+              "componentRating": "Z"
+            },
+            {
+              "componentType": "Phone",
+              "componentRating": "Z"
+            },
+            {
+              "componentType": "Postal Code",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "Density",
+              "componentRating": "F"
+            },
+            {
+              "componentType": "Uniqueness",
+              "componentRating": "F"
+            },
+            {
+              "componentType": "Sic",
+              "componentRating": "Z"
+            }
+          ],
+          "matchDataProfile": "0000009999989800000000009898",
+          "matchDataProfileComponentsCount": 14,
+          "matchDataProfileComponents": [
+            {
+              "componentType": "Name",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Street Number",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Street Name",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "City",
+              "componentValue": "99"
+            },
+            {
+              "componentType": "State",
+              "componentValue": "99"
+            },
+            {
+              "componentType": "PO Box",
+              "componentValue": "98"
+            },
+            {
+              "componentType": "Phone",
+              "componentValue": "98"
+            },
+            {
+              "componentType": "Postal Code",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "DUNS",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "SIC",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Density",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Uniqueness",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "National ID",
+              "componentValue": "98"
+            },
+            {
+              "componentType": "URL",
+              "componentValue": "98"
+            }
+          ],
+          "nameMatchScore": 80
+        }
+      },
+      {
+        "displaySequence": 3,
+        "organization": {
+          "duns": "040070382",
+          "websiteAddress": [],
+          "dunsControlStatus": {
+            "operatingStatus": {
+              "description": "Out of business",
+              "dnbCode": 403
+            },
+            "isMailUndeliverable": false
+          },
+          "primaryName": "DHL INTERNATIONAL LTD",
+          "tradeStyleNames": [],
+          "telephone": [],
+          "primaryAddress": {
+            "addressCountry": {
+              "isoAlpha2Code": "US",
+              "name": "UNITED STATES"
+            },
+            "addressLocality": {
+              "name": "SAN FRANCISCO"
+            },
+            "addressRegion": {
+              "name": null,
+              "abbreviatedName": "CA"
+            },
+            "postalCode": "94107",
+            "postalCodeExtension": "3102",
+            "streetAddress": {
+              "line1": "401 23RD ST",
+              "line2": null
+            }
+          },
+          "mailingAddress": {
+            "addressCountry": {
+              "isoAlpha2Code": "US",
+              "name": "UNITED STATES"
+            },
+            "addressLocality": {},
+            "addressRegion": {},
+            "postalCode": null,
+            "postalCodeExtension": null,
+            "streetAddress": {}
+          },
+          "registrationNumbers": [],
+          "mostSeniorPrincipals": [
+            {
+              "fullName": "JOAQUIN  MURRIETA"
+            }
+          ],
+          "isStandalone": true,
+          "corporateLinkage": {}
+        },
+        "matchQualityInformation": {
+          "confidenceCode": 8,
+          "matchGrade": "BAAAAZZAFFZ",
+          "matchGradeComponentsCount": 11,
+          "matchGradeComponents": [
+            {
+              "componentType": "Name",
+              "componentRating": "B"
+            },
+            {
+              "componentType": "Street Number",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "Street Name",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "City",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "State",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "PO Box",
+              "componentRating": "Z"
+            },
+            {
+              "componentType": "Phone",
+              "componentRating": "Z"
+            },
+            {
+              "componentType": "Postal Code",
+              "componentRating": "A"
+            },
+            {
+              "componentType": "Density",
+              "componentRating": "F"
+            },
+            {
+              "componentType": "Uniqueness",
+              "componentRating": "F"
+            },
+            {
+              "componentType": "Sic",
+              "componentRating": "Z"
+            }
+          ],
+          "matchDataProfile": "0000009999989800000000009898",
+          "matchDataProfileComponentsCount": 14,
+          "matchDataProfileComponents": [
+            {
+              "componentType": "Name",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Street Number",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Street Name",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "City",
+              "componentValue": "99"
+            },
+            {
+              "componentType": "State",
+              "componentValue": "99"
+            },
+            {
+              "componentType": "PO Box",
+              "componentValue": "98"
+            },
+            {
+              "componentType": "Phone",
+              "componentValue": "98"
+            },
+            {
+              "componentType": "Postal Code",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "DUNS",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "SIC",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Density",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "Uniqueness",
+              "componentValue": "00"
+            },
+            {
+              "componentType": "National ID",
+              "componentValue": "98"
+            },
+            {
+              "componentType": "URL",
+              "componentValue": "98"
+            }
+          ],
+          "nameMatchScore": 37
+        }
+      }
+    ],
+    "cleanseAndStandardizeInformation": {
+      "standardizedName": "DHL EXPRESS (USA), INC.",
+      "standardizedAddress": {
+        "addressCountry": {
+          "isoAlpha2Code": "US",
+          "name": "UNITED STATES"
+        },
+        "addressLocality": {
+          "name": "San Francisco"
+        },
+        "addressRegion": {
+          "name": "California",
+          "abbreviatedName": "CA"
+        },
+        "addressCounty": {
+          "name": "San Francisco"
+        },
+        "postalCode": "94107",
+        "postalCodeExtension": "3102",
+        "streetAddress": {
+          "line1": "401 23rd St",
+          "line2": null
+        },
+        "deliveryPointValidationStatus": "Delivery Point Validated",
+        "deliveryPointValidationCMRAValue": "No DPV",
+        "isInexactAddress": false,
+        "addressType": "Unknown"
+      }
+    }
+  },
+  "goldenId": "gold"
+}

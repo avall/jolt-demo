@@ -1,0 +1,82 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "familyTreeMembers": {
+        "*": {
+          "#configuration/entityTypes/Organization": "[&1].type",
+          "#configuration/sources/DnB": "[&1].crosswalks[0].type",
+          "#Real Time Plus": "[&1].attributes.DnBSource[].value",
+          "duns": ["[&1].attributes.DUNSNumber[].value", "[&1].crosswalks[0].value"],
+          "dunsControlStatus": {
+            "isMarketable": "[&2].attributes.MarketabilityIndicator[].value",
+            "lastUpdateDate": "[&2].attributes.DnBLastUpdateDate[].value",
+            "operatingStatus": {
+              "description": ["[&3].attributes.OrganizationDetail[0].value.OperatingStatusComment[].value",
+                "[&3].attributes.OrganizationDetail[0].value.OperatingStatus[].value"]
+            }
+          },
+          "primaryName": "[&1].attributes.Name[].value",
+          "tradeStyleNames": {
+            "*": {
+              "name": "[&3].attributes.TradeStyleName[&1].value.OrganizationName[].value"
+            }
+          },
+          "isStandalone": "[&1].attributes.OrganizationDetail[0].value.Standalone[].value",
+          "controlOwnershipDate": "[&1].attributes.OrganizationDetail[0].value.OwnershipDate[].value",
+          "controlOwnershipType": {
+            "description": "[&2].attributes.OrganizationDetail[0].value.OwnershipType[].value"
+          },
+          "startDate": "[&1].attributes.OrganizationDetail[0].value.StartYear[].value",
+          "primaryAddress": {
+            "streetAddress": {
+              "line1": "[&3].attributes.Address[0].value.AddressLine1[].value",
+              "line2": "[&3].attributes.Address[0].value.AddressLine2[].value",
+              "#Shipping": "[&3].attributes.Address[0].value.AddressType[].value",
+              "#true": "[&3].attributes.Address[0].value.Primary[].value",
+              "@(1,postalCode)": "[&3].attributes.Address[0].value.Zip[].value.PostalCode[].value",
+              "@(1,addressLocality)": {
+                "name": "[&4].attributes.Address[0].value.City[].value"
+              },
+              "@(1,addressRegion)": {
+                "name": "[&4].attributes.Address[0].value.StateProvince[].value"
+              },
+              "@(1,latitude)": "[&3].attributes.Address[0].value.DnBGeoLocation[0].value.DnBLatitude[].value",
+              "@(1,longitude)": "[&3].attributes.Address[0].value.DnBGeoLocation[0].value.DnBLongitude[].value",
+              "@(1,isRegisteredAddress)": "[&3].attributes.Address[0].value.Registered[].value",
+              "@(1,isResidentialAddress)": "[&3].attributes.Address[0].value.Residential[].value",
+              "@(1,addressCountry)": {
+                "name": "[&4].attributes.Address[0].value.Country[].value"
+              }
+            }
+          },
+          "financials": {
+            "*": {
+              "financialStatementToDate": "[&3].attributes.KeyFinancialFiguresOverview[&1].value.FinancialStatementToDate[].value",
+              "financialStatementDuration": "[&3].attributes.KeyFinancialFiguresOverview[&1].value.FinancialPeriodDuration[].value",
+              "yearlyRevenue": {
+                "*": {
+                  "value": "[&5].attributes.KeyFinancialFiguresOverview[&3].value.SalesRevenueAmount[&1].value",
+                  "currency": "[&5].attributes.KeyFinancialFiguresOverview[&3].value.SalesRevenueCurrencyCode[&1].value"
+                }
+              }
+            }
+          },
+          "numberOfEmployees": {
+            "*": {
+              "value": "[&3].attributes.EmployeeDetails[&1].value.IndividualTotalEmployeeQuantity[].value",
+              "reliabilityDescription": "[&3].attributes.EmployeeDetails[&1].value.IndividualReliabilityText[].value"
+            }
+          },
+          "corporateLinkage": {
+            "familytreeRolesPlayed": {
+              "*": {
+                "description": "[&4].attributes.OrganizationDetail[0].value.MemberRole[].value"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

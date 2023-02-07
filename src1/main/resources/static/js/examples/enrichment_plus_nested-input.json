@@ -1,0 +1,491 @@
+{
+  "transactionDetail": {
+    "transactionID": "rrt-040d96222d047da9a-c-eu-26080-5304409-8_745",
+    "transactionTimestamp": "2019-06-05T08:00:18.014Z",
+    "inLanguage": "en-US",
+    "productID": "cmpelf",
+    "productVersion": "1"
+  },
+  "inquiryDetail": {
+    "productVersion": "v1",
+    "productID": "cmpelf",
+    "duns": "042230623"
+  },
+  "organization": {
+    "duns": "042230623",
+    "dunsControlStatus": {
+      "operatingStatus": {
+        "description": "Active",
+        "dnbCode": 9074
+      },
+      "isMarketable": true,
+      "isMailUndeliverable": false,
+      "isTelephoneDisconnected": false,
+      "isDelisted": false,
+      "subjectHandlingDetails": [],
+      "fullReportDate": "2018-11-03"
+    },
+    "primaryName": "Bausch Health Americas, Inc.",
+    "tradeStyleNames": [
+      {
+        "name": "Bausch Health",
+        "priority": 1
+      }
+    ],
+    "telephone": [
+      {
+        "telephoneNumber": "9089271400",
+        "isdCode": "1",
+        "isUnreachable": false
+      }
+    ],
+    "fax": [],
+    "websiteAddress": [
+      {
+        "url": "www.bauschhealth.com",
+        "domainName": "bauschhealth.com"
+      }
+    ],
+    "primaryAddress": {
+      "language": {},
+      "addressCountry": {
+        "name": "United States",
+        "isoAlpha2Code": "US",
+        "fipsCode": "US"
+      },
+      "continentalRegion": {
+        "name": "North America"
+      },
+      "addressLocality": {
+        "name": "Bridgewater"
+      },
+      "minorTownName": null,
+      "addressRegion": {
+        "name": "New Jersey",
+        "abbreviatedName": "NJ",
+        "fipsCode": "34"
+      },
+      "addressCounty": {
+        "name": "Somerset",
+        "fipsCode": "035"
+      },
+      "postalCode": "08807-2867",
+      "postalCodePosition": {},
+      "streetNumber": null,
+      "streetName": null,
+      "streetAddress": {
+        "line1": "400 Somerset Corporate Blvd",
+        "line2": null
+      },
+      "postOfficeBox": {},
+      "latitude": 40.588954,
+      "longitude": -74.629915,
+      "geographicalPrecision": {
+        "description": "Street Address Centroid",
+        "dnbCode": 30257
+      },
+      "isRegisteredAddress": false,
+      "isResidentialAddress": null,
+      "statisticalArea": {
+        "cbsaName": "New York-Newark-Jersey City NY-NJ-PA",
+        "cbsaCode": "35620",
+        "economicAreaOfInfluenceCode": "118",
+        "populationRank": {
+          "rankNumber": "8",
+          "rankDnBCode": 10960,
+          "rankDescription": "250,000 to 499,999"
+        }
+      },
+      "locationOwnership": {
+        "description": "Leases",
+        "dnbCode": 1130
+      },
+      "premisesArea": {
+        "measurement": 110000,
+        "unitDescription": "Square Foot",
+        "unitDnBCode": 3848,
+        "reliabilityDescription": "Actual",
+        "reliabilityDnBCode": 9092
+      },
+      "isManufacturingLocation": true
+    },
+    "mailingAddress": {},
+    "registrationNumbers": [
+      {
+        "registrationNumber": "33-0628076",
+        "typeDescription": "Federal Taxpayer Identification Number (US)",
+        "typeDnBCode": 6863
+      }
+    ],
+    "industryCodes": [
+      {
+        "code": "325412",
+        "description": "Pharmaceutical Preparation Manufacturing",
+        "typeDescription": "North American Industry Classification System 2017",
+        "typeDnBCode": 30832,
+        "priority": 1
+      },
+      {
+        "code": "1486",
+        "description": "Pharmaceutical Manufacturing",
+        "typeDescription": "D&B Hoovers Industry Code",
+        "typeDnBCode": 25838,
+        "priority": 1
+      },
+      {
+        "code": "2834",
+        "description": "Mfg pharmaceutical preparations",
+        "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+        "typeDnBCode": 399,
+        "priority": 1
+      },
+      {
+        "code": "28340000",
+        "description": "Pharmaceutical preparations",
+        "typeDescription": "D&B Standard Industry Code",
+        "typeDnBCode": 3599,
+        "priority": 1
+      },
+      {
+        "code": "D",
+        "description": "Manufacturing",
+        "typeDescription": "D&B Standard Major Industry Code",
+        "typeDnBCode": 24657,
+        "priority": 1
+      },
+      {
+        "code": "2120",
+        "description": "Manufacture of pharmaceutical preparations",
+        "typeDescription": "NACE Revision 2",
+        "typeDnBCode": 29104,
+        "priority": 1
+      }
+    ],
+    "incorporatedDate": "1994",
+    "startDate": "1994",
+    "controlOwnershipDate": "1994",
+    "businessEntityType": {
+      "description": "Corporation",
+      "dnbCode": 451
+    },
+    "controlOwnershipType": {},
+    "legalForm": {
+      "registrationLocation": {
+        "addressRegion": "DE"
+      }
+    },
+    "franchiseOperationType": {},
+    "isAgent": null,
+    "summary": [],
+    "isImporter": true,
+    "isExporter": null,
+    "numberOfEmployees": [
+      {
+        "value": 355,
+        "informationScopeDescription": "Headquarters Only (Employs Here)",
+        "informationScopeDnBCode": 9068,
+        "reliabilityDescription": "Actual",
+        "reliabilityDnBCode": 9092,
+        "employeeCategories": [
+          {
+            "employmentBasisDescription": "Principals",
+            "employmentBasisDnBCode": 9064
+          }
+        ],
+        "trend": []
+      },
+      {
+        "value": 4044,
+        "informationScopeDescription": "Consolidated",
+        "informationScopeDnBCode": 9067,
+        "reliabilityDescription": "Actual",
+        "reliabilityDnBCode": 9092,
+        "employeeCategories": [
+          {
+            "employmentBasisDescription": "Principals",
+            "employmentBasisDnBCode": 9064
+          }
+        ],
+        "trend": [
+          {
+            "timePeriod": {
+              "description": "1-5 years",
+              "dnbCode": 13721
+            },
+            "growthRate": 28
+          }
+        ]
+      }
+    ],
+    "financials": [
+      {
+        "financialStatementToDate": null,
+        "financialStatementDuration": null,
+        "informationScopeDescription": null,
+        "informationScopeDnBCode": null,
+        "reliabilityDescription": "Modelled",
+        "reliabilityDnBCode": 9094,
+        "unitCode": "Single Units",
+        "accountantName": null,
+        "yearlyRevenue": [
+          {
+            "value": 3095378040,
+            "currency": "USD",
+            "trend": []
+          }
+        ]
+      }
+    ],
+    "stockExchanges": [],
+    "isStandalone": false,
+    "corporateLinkage": {
+      "familytreeRolesPlayed": [
+        {
+          "description": "Subsidiary",
+          "dnbCode": 9159
+        },
+        {
+          "description": "Domestic Ultimate",
+          "dnbCode": 12774
+        },
+        {
+          "description": "Parent/Headquarters",
+          "dnbCode": 9141
+        }
+      ],
+      "hierarchyLevel": 2,
+      "globalUltimateFamilyTreeMembersCount": 222,
+      "globalUltimate": {
+        "duns": "245141858",
+        "primaryName": "Bausch Health Companies Inc",
+        "primaryAddress": {
+          "addressCountry": {
+            "name": "Canada",
+            "isoAlpha2Code": "CA"
+          },
+          "continentalRegion": {
+            "name": "North America"
+          },
+          "addressLocality": {
+            "name": "Laval"
+          },
+          "addressRegion": {
+            "name": "QUEBEC",
+            "abbreviatedName": "QC"
+          },
+          "postalCode": "H7L 4A8",
+          "streetAddress": {
+            "line1": "2150 boul Saint-Elzéar O",
+            "line2": null
+          }
+        }
+      },
+      "domesticUltimate": {
+        "duns": "042230623",
+        "primaryName": "Bausch Health Americas, Inc.",
+        "primaryAddress": {
+          "addressCountry": {
+            "name": "United States",
+            "isoAlpha2Code": "US"
+          },
+          "continentalRegion": {
+            "name": "North America"
+          },
+          "addressLocality": {
+            "name": "Bridgewater"
+          },
+          "addressRegion": {
+            "name": "New Jersey",
+            "abbreviatedName": "NJ"
+          },
+          "postalCode": "08807-2867",
+          "streetAddress": {
+            "line1": "400 Somerset Corporate Blvd",
+            "line2": null
+          }
+        }
+      },
+      "parent": {
+        "duns": "245141858",
+        "primaryName": "Bausch Health Companies Inc",
+        "primaryAddress": {
+          "addressCountry": {
+            "name": "Canada",
+            "isoAlpha2Code": "CA"
+          },
+          "continentalRegion": {
+            "name": "North America"
+          },
+          "addressLocality": {
+            "name": "Laval"
+          },
+          "addressRegion": {
+            "name": "QUEBEC",
+            "abbreviatedName": "QC"
+          },
+          "postalCode": "H7L 4A8",
+          "streetAddress": {
+            "line1": "2150 boul Saint-Elzéar O",
+            "line2": null
+          }
+        }
+      },
+      "headQuarter": {}
+    },
+    "thirdPartyAssessment": [],
+    "socioEconomicInformation": {},
+    "mostSeniorPrincipals": [
+      {
+        "givenName": "J",
+        "middleName": "Michael",
+        "familyName": "Pearson",
+        "fullName": "J Michael Pearson",
+        "namePrefix": null,
+        "nameSuffix": null,
+        "gender": {},
+        "jobTitles": [
+          {
+            "title": "Chief Executive Officer"
+          }
+        ],
+        "positions": [],
+        "managementResponsibilities": [
+          {
+            "description": "Chief Executive Officer",
+            "mrcCode": "A1A7"
+          }
+        ]
+      }
+    ],
+    "currentPrincipals": [
+      {
+        "givenName": "ROBERT",
+        "middleName": "CHAI",
+        "familyName": "ONN",
+        "fullName": "ROBERT CHAI ONN",
+        "namePrefix": null,
+        "nameSuffix": null,
+        "gender": {},
+        "jobTitles": [
+          {
+            "title": "Executive Vice President"
+          }
+        ],
+        "positions": [],
+        "managementResponsibilities": [
+          {
+            "description": "Executive Vice-President",
+            "mrcCode": "A5D4"
+          }
+        ]
+      },
+      {
+        "givenName": "MARGARET",
+        "middleName": null,
+        "familyName": "MULLIGAN",
+        "fullName": "MARGARET MULLIGAN",
+        "namePrefix": null,
+        "nameSuffix": null,
+        "gender": {},
+        "jobTitles": [
+          {
+            "title": "Executive Vice President"
+          }
+        ],
+        "managementResponsibilities": [
+          {
+            "description": "Executive Vice-President",
+            "mrcCode": "A5D4"
+          }
+        ]
+      },
+      {
+        "givenName": "G",
+        "middleName": "MASON",
+        "familyName": "MORFIT",
+        "fullName": "G MASON MORFIT",
+        "namePrefix": null,
+        "nameSuffix": null,
+        "gender": {},
+        "jobTitles": [
+          {
+            "title": "President"
+          }
+        ],
+        "managementResponsibilities": [
+          {
+            "description": "President",
+            "mrcCode": "A1A6"
+          }
+        ]
+      },
+      {
+        "givenName": "ROBERT",
+        "middleName": null,
+        "familyName": "ROSIELLO",
+        "fullName": "ROBERT ROSIELLO",
+        "namePrefix": null,
+        "nameSuffix": null,
+        "gender": {},
+        "jobTitles": [
+          {
+            "title": "Executive Vice President"
+          }
+        ],
+        "managementResponsibilities": [
+          {
+            "description": "Executive Vice-President",
+            "mrcCode": "A5D4"
+          }
+        ]
+      },
+      {
+        "givenName": "ROBERT",
+        "middleName": "N",
+        "familyName": "POWER",
+        "fullName": "ROBERT N POWER",
+        "namePrefix": null,
+        "nameSuffix": null,
+        "gender": {},
+        "jobTitles": [
+          {
+            "title": "Director"
+          }
+        ],
+        "managementResponsibilities": [
+          {
+            "description": "Director",
+            "mrcCode": "Z699"
+          }
+        ]
+      },
+      {
+        "givenName": "ROBERT",
+        "middleName": "A",
+        "familyName": "INGRAM",
+        "fullName": "ROBERT A INGRAM",
+        "namePrefix": null,
+        "nameSuffix": null,
+        "gender": {},
+        "jobTitles": [
+          {
+            "title": "Director"
+          }
+        ],
+        "managementResponsibilities": [
+          {
+            "description": "Director",
+            "mrcCode": "Z699"
+          }
+        ]
+      }
+    ],
+    "dnbAssessment": {
+      "marketingRiskClass": {
+        "description": "Moderate",
+        "dnbCode": 10926
+      }
+    },
+    "thirdPartyFinancials": {}
+  }
+}

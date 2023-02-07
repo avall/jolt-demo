@@ -1,0 +1,174 @@
+{
+  "examples": [
+    {
+      "title": "Inception",
+      "name": "inception",
+      "type": "native"
+    },
+    {
+      "title": "Convert nested data, to 'prefix soup.",
+      "name": "bucketToPrefixSoup",
+      "type": "native"
+    },
+    {
+      "title": "Convert 'prefix soup', to nested data.",
+      "name": "prefixSoupToBuckets",
+      "type": "native"
+    },
+    {
+      "title": "Grab LHS key values.",
+      "name": "listKeys",
+      "type": "native"
+    },
+    {
+      "title": "Map to list.",
+      "name": "mapToList",
+      "type": "native"
+    },
+    {
+      "title": "List to Map.",
+      "name": "inputArrayToPrefix",
+      "type": "native"
+    },
+    {
+      "title": "hashDefault",
+      "name": "On a match, apply a String default.",
+      "type": "native"
+    },
+    {
+      "title": "Base case simple Transpose.",
+      "name": "transposeSimple",
+      "type": "native"
+    },
+    {
+      "title": "Complex / nested Transpose.",
+      "name": "transposeComplex",
+      "type": "native"
+    },
+    {
+      "title": "Escaping Shiftr special chars.",
+      "name": "json-ld-escaping",
+      "type": "native"
+    },
+    {
+      "title": "Transpose data in an Array.",
+      "name": "ritwickgupta",
+      "type": "native"
+    },
+    {
+      "title": "Bucket data from an Array, based on a leaf level value.",
+      "name": "andrewkcarter1",
+      "type": "native"
+    },
+    {
+      "title": "Filter data from an Array, based on a leaf level value.",
+      "name": "andrewkcarter2",
+      "type": "native"
+    },
+    {
+      "title": "List Functions",
+      "name": "",
+      "type": "native"
+    },
+    {
+      "title": "Math Functions",
+      "name": "modify-listFunctions",
+      "type": "native"
+    },
+    {
+      "title": "Type Conversion",
+      "name": "modify-typeConversion",
+      "type": "native"
+    },
+    {
+      "title": "String Concatenation",
+      "name": "modify-stringFunctions",
+      "type": "native"
+    },
+    {
+      "title": "Filter+: Address as nested attribute",
+      "name": "filter_plus_nested",
+      "type": "reltio"
+    },
+    {
+      "title": "Filter+: Address as reference attribute. Single address in entity",
+      "name": "filter_plus_ref_single",
+      "type": "reltio"
+    },
+    {
+      "title": "Filter+: Address as reference attribute. No postal code, only Zip5",
+      "name": "filter_plus_ref_npz",
+      "type": "reltio"
+    },
+    {
+      "title": "Filter+: Address as nested attribute. Uniq DUNS mapping and ordinary DUNS",
+      "name": "filter_plus_ud_ordinary",
+      "type": "reltio"
+    },
+    {
+      "title": "Filter+: Address as nested attribute. Uniq DUNS mapping and UNIQ DUNS",
+      "name": "filter_plus_ud_ud",
+      "type": "reltio"
+    },
+    {
+      "title": "Enrichment+: Address as nested attribute",
+      "name": "enrichment_plus_nested",
+      "type": "reltio"
+    },
+    {
+      "title": "Enrichment+: Address as reference attribute",
+      "name": "enrichment_plus_ref",
+      "type": "reltio"
+    },
+    {
+    "title": "Enrichment+: Address as nested attribute UNIQ duns",
+      "name": "enrichment_plus_nested_ud",
+      "type": "reltio"
+    },
+    {
+      "title": "Batch+: Address as nested attribute",
+      "name": "batch_plus_nested",
+      "type": "reltio"
+    },
+    {
+      "title": "Batch+: Address as reference attribute",
+      "name": "batch_plus_ref",
+      "type": "reltio"
+    },
+    {
+      "title": "Batch+: Address as nested attribute UNIQ duns",
+      "name": "batch_plus_nested_ud",
+      "type": "reltio"
+    },
+    {
+      "title": "Match+:  Address as nested attribute",
+      "name": "match_plus_nested",
+      "type": "reltio"
+    },
+    {
+      "title": "Match+:  Address as reference attribute",
+      "name": "match_plus_ref",
+      "type": "reltio"
+    },
+    {
+      "title": "Match+:  Address as nested attribute UNIQ duns",
+      "name": "match_plus_nested_ud",
+      "type": "reltio"
+    },
+    {
+      "title": "Monitoring:  exception event transform",
+      "name": "mon_exception",
+      "type": "reltio"
+    },
+    {
+      "title": "Family tree+:  corporate linkage upward with Address as nested attribute",
+      "name": "clu_nested",
+      "type": "reltio"
+    },
+    {
+      "title": "Family tree+:  corporate linkage upward with Address as reference attribute",
+      "name": "clu_ref",
+      "type": "reltio"
+    }
+  ]
+}

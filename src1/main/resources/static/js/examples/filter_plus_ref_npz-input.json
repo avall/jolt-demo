@@ -1,0 +1,208 @@
+{
+  "uri": "entities/Ho903GX",
+  "type": "configuration/entityTypes/Organization",
+  "attributes": {
+    "Name": [
+      {
+        "type": "configuration/entityTypes/Organization/attributes/Name",
+        "ov": true,
+        "value": "DHL EXPRESS (USA), INC.",
+        "uri": "entities/Ho903GX/attributes/Name/YP94cJbh"
+      }
+    ],
+    "DUNSNumber": [
+      {
+        "type": "configuration/entityTypes/Organization/attributes/DUNSNumber",
+        "ov": true,
+        "value": "102231276",
+        "uri": "entities/Ho903GX/attributes/DUNSNumber/YP94d0EH"
+      }
+    ],
+    "DnBType": [
+      {
+        "type": "configuration/entityTypes/Organization/attributes/DnBType",
+        "ov": true,
+        "value": "DnB",
+        "uri": "entities/Ho903GX/attributes/DnBType/YP94d4UX"
+      }
+    ],
+    "Phone": [
+      {
+        "value": {
+          "Number": [
+            {
+              "value": "123455",
+              "ov": true
+            },
+            {
+              "value": "9876"
+            }
+          ],
+          "PrimaryPhoneFlag": [
+            {
+              "value": "true"
+            }
+          ],
+          "ValidationStatus": [
+            {
+              "type": "configuration/entityTypes/Organization/attributes/Phone/attributes/ValidationStatus",
+              "ov": true,
+              "value": "VALID",
+              "uri": "entities/M3c9oAo/attributes/Phone/awlVdKCE/ValidationStatus/awmRcAYw"
+            }
+          ]
+        }
+      }
+    ],
+    "Address": [
+      {
+        "label": "1210 S Pine Island Rd Fort Lauderdale FL 33324 United States",
+        "relationshipLabel": "",
+        "value": {
+          "AddressLine1": [
+            {
+              "type": "configuration/entityTypes/Location/attributes/AddressLine1",
+              "ov": true,
+              "value": "1210 S Pine Island Rd",
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/AddressLine1/YK1DiuE1"
+            },
+            {
+              "type": "configuration/entityTypes/Location/attributes/AddressLine1",
+              "ov": false,
+              "value": "1210 S PINE ISLAND RD",
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/AddressLine1/dVIHldUZ"
+            }
+          ],
+          "AddressLine2": [
+            {
+              "type": "configuration/entityTypes/Location/attributes/AddressLine1",
+              "ov": true,
+              "value": "1210 S Pine Island RD",
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/AddressLine1/YK1DiuE1"
+            }
+          ],
+          "City": [
+            {
+              "type": "configuration/entityTypes/Location/attributes/City",
+              "ov": true,
+              "value": "Fort Lauderdale",
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/City/YK1DiDbR"
+            },
+            {
+              "type": "configuration/entityTypes/Location/attributes/City",
+              "ov": false,
+              "value": "FORT LAUDERDALE",
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/City/dVIHlhkp"
+            }
+          ],
+          "StateProvince": [
+            {
+              "type": "configuration/entityTypes/Location/attributes/StateProvince",
+              "ov": true,
+              "value": "FL",
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/StateProvince/dVIHlm15"
+            }
+          ],
+          "Zip": [
+            {
+              "label": "33324-",
+              "value": {
+                "Zip5": [
+                  {
+                    "type": "configuration/entityTypes/Location/attributes/Zip/attributes/Zip5",
+                    "ov": false,
+                    "value": "33324z",
+                    "uri": "entities/Ho903GX/attributes/Address/L7oINsz/Zip/eU6jNckA/Zip5/eU6jNh0Q"
+                  }
+                ]
+              },
+              "ov": false,
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/Zip/eU6jNckA"
+            }
+          ],
+          "Country": [
+            {
+              "type": "configuration/entityTypes/Location/attributes/Country",
+              "ov": true,
+              "value": "United States",
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/Country/YK1DjBH3"
+            }
+          ],
+          "GeoLocation": [
+            {
+              "label": "26.105180, -80.260090",
+              "value": {
+                "Latitude": [
+                  {
+                    "type": "configuration/entityTypes/Location/attributes/GeoLocation/attributes/Latitude",
+                    "ov": true,
+                    "value": "26.105180",
+                    "uri": "entities/Ho903GX/attributes/Address/L7oINsz/GeoLocation/YK1DjWaL/Latitude/YK1Djf6r"
+                  }
+                ],
+                "Longitude": [
+                  {
+                    "type": "configuration/entityTypes/Location/attributes/GeoLocation/attributes/Longitude",
+                    "ov": true,
+                    "value": "-80.260090",
+                    "uri": "entities/Ho903GX/attributes/Address/L7oINsz/GeoLocation/YK1DjWaL/Longitude/YK1DjjN7"
+                  }
+                ],
+                "GeoAccuracy": [
+                  {
+                    "type": "configuration/entityTypes/Location/attributes/GeoLocation/attributes/GeoAccuracy",
+                    "ov": true,
+                    "value": "P4",
+                    "uri": "entities/Ho903GX/attributes/Address/L7oINsz/GeoLocation/YK1DjWaL/GeoAccuracy/YK1Djaqb"
+                  }
+                ]
+              },
+              "ov": true,
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/GeoLocation/YK1DjWaL"
+            },
+            {
+              "label": "Couriers and Express Delivery Services,",
+              "value": {
+                "Latitude": [
+                  {
+                    "type": "configuration/entityTypes/Location/attributes/GeoLocation/attributes/Latitude",
+                    "ov": false,
+                    "value": "Couriers and Express Delivery Services",
+                    "uri": "entities/Ho903GX/attributes/Address/L7oINsz/GeoLocation/eU6jNy3S/Latitude/eU6jO2Ji"
+                  }
+                ]
+              },
+              "ov": false,
+              "uri": "entities/Ho903GX/attributes/Address/L7oINsz/GeoLocation/eU6jNy3S"
+            }
+          ],
+          "POBox": [
+            {
+              "value": "POB"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "isFavorite": false,
+  "crosswalks": [
+    {
+      "uri": "entities/Ho903GX/crosswalks/YP94d8kn",
+      "type": "configuration/sources/DnB",
+      "value": "102231276",
+      "reltioLoadDate": "2016-10-17T06:03:44.843Z",
+      "createDate": "2016-10-17T06:03:44.843Z",
+      "updateDate": "2016-10-17T06:03:44.843Z",
+      "attributes": [
+        "entities/Ho903GX/attributes/Name/YP94cJbh",
+        "entities/Ho903GX/attributes/DUNSNumber/YP94d0EH",
+        "entities/Ho903GX/attributes/DnBType/YP94d4UX"
+      ],
+      "singleAttributeUpdateDates": {}
+    }
+  ],
+  "analyticsAttributes": {},
+  "label": "DHL EXPRESS (USA), INC.",
+  "secondaryLabel": "1210 S Pine Island Rd Fort Lauderdale FL 33324 United States,"
+}

@@ -1,0 +1,363 @@
+{
+  "transactionDetail": {
+    "transactionID": "rrt-08a4bee8dc20a39fa-a-eu-22462-1022078-52_745",
+    "transactionTimestamp": "2019-05-24T07:48:12.325Z",
+    "inLanguage": "en-US",
+    "productID": "cmpelf",
+    "productVersion": "1"
+  },
+  "inquiryDetail": {
+    "productVersion": "v1",
+    "productID": "cmpelf",
+    "duns": "005033533"
+  },
+  "organization": {
+    "duns": "005033533",
+    "dunsControlStatus": {
+      "operatingStatus": {
+        "description": "Active",
+        "dnbCode": 9074
+      },
+      "isMarketable": false,
+      "isMailUndeliverable": true,
+      "isTelephoneDisconnected": false,
+      "isDelisted": false,
+      "subjectHandlingDetails": [],
+      "fullReportDate": "2017-09-18"
+    },
+    "primaryName": "Oracle Corporation",
+    "tradeStyleNames": [
+      {
+        "name": "Oracle",
+        "priority": 1
+      }
+    ],
+    "telephone": [
+      {
+        "telephoneNumber": "7723374141",
+        "isdCode": "1",
+        "isUnreachable": false
+      }
+    ],
+    "fax": [],
+    "websiteAddress": [
+      {
+        "url": "www.oracle.com",
+        "domainName": "oracle.com"
+      }
+    ],
+    "primaryAddress": {
+      "language": {},
+      "addressCountry": {
+        "name": "United States",
+        "isoAlpha2Code": "US",
+        "fipsCode": "US"
+      },
+      "continentalRegion": {
+        "name": "North America"
+      },
+      "addressLocality": {
+        "name": "Port Saint Lucie"
+      },
+      "minorTownName": null,
+      "addressRegion": {
+        "name": "Florida",
+        "abbreviatedName": "FL",
+        "fipsCode": "12"
+      },
+      "addressCounty": {
+        "name": "Saint Lucie",
+        "fipsCode": "111"
+      },
+      "postalCode": "34952-7541",
+      "postalCodePosition": {},
+      "streetNumber": null,
+      "streetName": null,
+      "streetAddress": {
+        "line1": "1701 SE Hillmoor Dr Ste D16",
+        "line2": null
+      },
+      "postOfficeBox": {},
+      "latitude": 27.287803,
+      "longitude": -80.29584,
+      "geographicalPrecision": {
+        "description": "Street Address Centroid",
+        "dnbCode": 30257
+      },
+      "isRegisteredAddress": false,
+      "isResidentialAddress": null,
+      "statisticalArea": {
+        "cbsaName": "Port St. Lucie FL",
+        "cbsaCode": "38940",
+        "economicAreaOfInfluenceCode": "106",
+        "populationRank": {
+          "rankNumber": "7",
+          "rankDnBCode": 10959,
+          "rankDescription": "100,000 to 249,999"
+        }
+      },
+      "locationOwnership": {},
+      "premisesArea": {},
+      "isManufacturingLocation": null
+    },
+    "mailingAddress": {
+      "language": {},
+      "addressCountry": {
+        "name": "United States",
+        "isoAlpha2Code": "US",
+        "fipsCode": "US"
+      },
+      "continentalRegion": {
+        "name": "North America"
+      },
+      "addressLocality": {
+        "name": "Port Saint Lucie"
+      },
+      "minorTownName": null,
+      "addressRegion": {
+        "name": "Florida",
+        "abbreviatedName": "FL",
+        "fipsCode": "12"
+      },
+      "addressCounty": {
+        "name": "Saint Lucie",
+        "fipsCode": "111"
+      },
+      "postalCode": "34952-7541",
+      "postalCodePosition": {},
+      "streetNumber": null,
+      "streetName": null,
+      "streetAddress": {
+        "line1": "1701 SE Hillmoor Dr Ste D16",
+        "line2": null
+      },
+      "postOfficeBox": {},
+      "latitude": 27.287803,
+      "longitude": -80.29584,
+      "geographicalPrecision": {
+        "description": "Street Address Centroid",
+        "dnbCode": 30257
+      },
+      "isRegisteredAddress": false,
+      "isResidentialAddress": null,
+      "statisticalArea": {
+        "cbsaName": "Port St. Lucie FL",
+        "cbsaCode": "38940",
+        "economicAreaOfInfluenceCode": "106",
+        "populationRank": {
+          "rankNumber": "7",
+          "rankDnBCode": 10959,
+          "rankDescription": "100,000 to 249,999"
+        }
+      },
+      "locationOwnership": {},
+      "premisesArea": {},
+      "isManufacturingLocation": null
+    },
+    "registrationNumbers": [],
+    "industryCodes": [
+      {
+        "code": "511210",
+        "description": "Software Publishers",
+        "typeDescription": "North American Industry Classification System 2017",
+        "typeDnBCode": 30832,
+        "priority": 1
+      },
+      {
+        "code": "1121",
+        "description": "Computer Software",
+        "typeDescription": "D&B Hoovers Industry Code",
+        "typeDnBCode": 25838,
+        "priority": 1
+      },
+      {
+        "code": "7372",
+        "description": "Prepackaged software services",
+        "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+        "typeDnBCode": 399,
+        "priority": 1
+      },
+      {
+        "code": "73720000",
+        "description": "Prepackaged software",
+        "typeDescription": "D&B Standard Industry Code",
+        "typeDnBCode": 3599,
+        "priority": 1
+      },
+      {
+        "code": "I",
+        "description": "Services",
+        "typeDescription": "D&B Standard Major Industry Code",
+        "typeDnBCode": 24657,
+        "priority": 1
+      },
+      {
+        "code": "5820",
+        "description": "Software publishing",
+        "typeDescription": "NACE Revision 2",
+        "typeDnBCode": 29104,
+        "priority": 1
+      }
+    ],
+    "incorporatedDate": null,
+    "startDate": null,
+    "controlOwnershipDate": null,
+    "businessEntityType": {
+      "description": "Unknown",
+      "dnbCode": 0
+    },
+    "controlOwnershipType": {},
+    "legalForm": {},
+    "franchiseOperationType": {},
+    "isAgent": null,
+    "summary": [],
+    "isImporter": null,
+    "isExporter": null,
+    "numberOfEmployees": [
+      {
+        "value": 191,
+        "informationScopeDescription": "Consolidated",
+        "informationScopeDnBCode": 9067,
+        "reliabilityDescription": "Actual",
+        "reliabilityDnBCode": 9092,
+        "employeeCategories": [
+          {
+            "employmentBasisDescription": "Principals",
+            "employmentBasisDnBCode": 9064
+          }
+        ],
+        "trend": []
+      },
+      {
+        "value": 191,
+        "informationScopeDescription": "Individual",
+        "informationScopeDnBCode": 9066,
+        "reliabilityDescription": "Actual",
+        "reliabilityDnBCode": 9092,
+        "employeeCategories": [
+          {
+            "employmentBasisDescription": "Principals",
+            "employmentBasisDnBCode": 9064
+          }
+        ],
+        "trend": []
+      }
+    ],
+    "financials": [],
+    "stockExchanges": [],
+    "isStandalone": false,
+    "corporateLinkage": {
+      "familytreeRolesPlayed": [
+        {
+          "description": "Branch/Division",
+          "dnbCode": 9140
+        }
+      ],
+      "hierarchyLevel": 1,
+      "globalUltimateFamilyTreeMembersCount": 1161,
+      "globalUltimate": {
+        "duns": "144709193",
+        "primaryName": "Oracle Corporation",
+        "primaryAddress": {
+          "addressCountry": {
+            "name": "United States",
+            "isoAlpha2Code": "US"
+          },
+          "continentalRegion": {
+            "name": "North America"
+          },
+          "addressLocality": {
+            "name": "Redwood City"
+          },
+          "addressRegion": {
+            "name": "California",
+            "abbreviatedName": "CA"
+          },
+          "postalCode": "94065-1677",
+          "streetAddress": {
+            "line1": "500 Oracle Pkwy",
+            "line2": null
+          }
+        }
+      },
+      "domesticUltimate": {
+        "duns": "144709193",
+        "primaryName": "Oracle Corporation",
+        "primaryAddress": {
+          "addressCountry": {
+            "name": "United States",
+            "isoAlpha2Code": "US"
+          },
+          "continentalRegion": {
+            "name": "North America"
+          },
+          "addressLocality": {
+            "name": "Redwood City"
+          },
+          "addressRegion": {
+            "name": "California",
+            "abbreviatedName": "CA"
+          },
+          "postalCode": "94065-1677",
+          "streetAddress": {
+            "line1": "500 Oracle Pkwy",
+            "line2": null
+          }
+        }
+      },
+      "parent": {},
+      "headQuarter": {
+        "duns": "144709193",
+        "primaryName": "Oracle Corporation",
+        "primaryAddress": {
+          "addressCountry": {
+            "name": "United States",
+            "isoAlpha2Code": "US"
+          },
+          "continentalRegion": {
+            "name": "North America"
+          },
+          "addressLocality": {
+            "name": "Redwood City"
+          },
+          "addressRegion": {
+            "name": "California",
+            "abbreviatedName": "CA"
+          },
+          "postalCode": "94065-1677",
+          "streetAddress": {
+            "line1": "500 Oracle Pkwy",
+            "line2": null
+          }
+        }
+      }
+    },
+    "thirdPartyAssessment": [],
+    "socioEconomicInformation": {
+      "isMinorityOwned": null,
+      "minorityOwnedCertifiedDate": null,
+      "isSmallBusiness": null,
+      "smallBusinessOwnedCertifiedDate": null,
+      "isFemaleOwned": null,
+      "femaleOwnedCertifiedDate": null,
+      "isLabourSurplusArea": true,
+      "labourSurplusAreaCertifiedDate": null,
+      "is8AFirm": null,
+      "8AFirmCertifiedDate": null,
+      "isDisadvantagedBusiness": null,
+      "ownershipEthnicityType": [],
+      "isDisabledOwned": null,
+      "isVeteranOwned": null,
+      "isVietnamVeteranOwned": null
+    },
+    "mostSeniorPrincipals": [],
+    "currentPrincipals": [],
+    "dnbAssessment": {
+      "marketingRiskClass": {
+        "description": "Low",
+        "dnbCode": 10925
+      }
+    },
+    "thirdPartyFinancials": {}
+  }
+}

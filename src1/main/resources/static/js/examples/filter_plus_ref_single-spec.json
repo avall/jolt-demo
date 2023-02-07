@@ -1,0 +1,581 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "attributes": ["attributes", "nums"],
+      "uri": {
+        "*/*": {
+          "$(0,2)": "uri"
+        }
+      },
+      "type": {
+        "*/*/*": {
+          "$(0,3)": "type"
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "uri": "uri",
+      "type": "type",
+      "attributes": "attributes",
+      "nums": {
+        "Address": {
+          "*": {
+            "value": {
+              "AddressType": {
+                "*": {
+                  "lookupCode": {
+                    "Shipping": {
+                      "#SH": "attributes.Shipping[]"
+                    },
+                    "Billing": {
+                      "#BL": "attributes.Billing[]"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "attributes": {
+        "BillingSize": "=size(@(1,Billing))",
+        "ShippingSize": "=size(@(1,Shipping))",
+        "TotalSize": "=size(@(1,Address))",
+        "PhoneSize": "=size(@(1,Phone))"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "uri": "uri",
+      "type": "type",
+      "attributes": {
+        "TotalSize": {
+          "1": {
+            "@(2,Address)": {
+              "*": {
+                "value": {
+                  "AddressLine1": {
+                    "#0": "Address[0].score[]",
+                    "*": {
+                      "value": "Address[0].AddressLine1[]"
+                    },
+                    "@(1,AddressLine2)": {
+                      "*": {
+                        "value": "Address[0].AddressLine2[]"
+                      }
+                    },
+                    "@(1,City)": {
+                      "*": {
+                        "value": "Address[0].PrimaryTownName[]"
+                      }
+                    },
+                    "@(1,POBox)": {
+                      "*": {
+                        "value": "Address[0].POBox[]"
+                      }
+                    },
+                    "@(1,Zip)": {
+                      "*": {
+                        "value": {
+                          "Zip5": {
+                            "*": {
+                              "value": "Address[0].FullZipCode[]"
+                            }
+                          },
+                          "PostalCode": {
+                            "*": {
+                              "value": "Address[0].FullPostalCode[]"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "@(1,StateProvince)": {
+                      "*": {
+                        "value": "Address[0].TerritoryName[]"
+                      }
+                    },
+                    "@(1,ISO3166-2)": {
+                      "*": {
+                        "value": "Address[0].CountryISOAlpha2Code[]"
+                      }
+                    },
+                    "@(1,Country)": {
+                      "*": {
+                        "lookupCode": "Address[0].CountryISOAlpha2Code[]",
+                        "value": "Address[0].Country[]"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "*": {
+            "@(2,ShippingSize)": {
+              "1": {
+                "@(4,Address)": {
+                  "*": {
+                    "value": {
+                      "AddressType": {
+                        "*": {
+                          "lookupCode": {
+                            "Shipping": {
+                              "@4": {
+                                "AddressLine1": {
+                                  "*": {
+                                    "value": "Address[&9].AddressLine1[]"
+                                  },
+                                  "#5": "Address[&8].score[]",
+                                  "@(1,AddressLine2)": {
+                                    "*": {
+                                      "value": "Address[&10].AddressLine2[]"
+                                    }
+                                  },
+                                  "@(1,City)": {
+                                    "*": {
+                                      "value": "Address[&10].PrimaryTownName[]"
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  },
+                                  "@(1,POBox)": {
+                                    "*": {
+                                      "value": "Address[&10].POBox[]"
+                                    }
+                                  },
+                                  "@(1,Zip)": {
+                                    "*": {
+                                      "value": {
+                                        "Zip5": {
+                                          "*": {
+                                            "value": "Address[&13].FullZipCode[]"
+                                          }
+                                        },
+                                        "PostalCode": {
+                                          "*": {
+                                            "value": "Address[&13].FullPostalCode[]"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  },
+                                  "@(1,StateProvince)": {
+                                    "*": {
+                                      "value": "Address[&10].TerritoryName[]"
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  },
+                                  "@(1,ISO3166-2)": {
+                                    "*": {
+                                      "value": "Address[&10].CountryISOAlpha2Code[]"
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  },
+                                  "@(1,Country)": {
+                                    "*": {
+                                      "lookupCode": "Address[&10].CountryISOAlpha2Code[]",
+                                      "value": "Address[&10].Country[]"
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "*": {
+                "@(4,Address)": {
+                  "*": {
+                    "value": {
+                      "AddressType": {
+                        "*": {
+                          "lookupCode": {
+                            "Shipping": {
+                              "@4": {
+                                "Primary": {
+                                  "*": {
+                                    "value": {
+                                      "true": {
+                                        "@9": {
+                                          "AddressLine1": {
+                                            "*": {
+                                              "value": "Address[&14].AddressLine1[]"
+                                            },
+                                            "#5": "Address[&13].score[]",
+                                            "@(1,AddressLine2)": {
+                                              "*": {
+                                                "value": "Address[&15].AddressLine2[]"
+                                              }
+                                            },
+                                            "@(1,City)": {
+                                              "*": {
+                                                "value": "Address[&15].PrimaryTownName[]"
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            },
+                                            "@(1,POBox)": {
+                                              "*": {
+                                                "value": "Address[&15].POBox[]"
+                                              }
+                                            },
+                                            "@(1,Zip)": {
+                                              "*": {
+                                                "value": {
+                                                  "Zip5": {
+                                                    "*": {
+                                                      "value": "Address[&18].FullZipCode[]"
+                                                    }
+                                                  },
+                                                  "PostalCode": {
+                                                    "*": {
+                                                      "value": "Address[&18].FullPostalCode[]"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            },
+                                            "@(1,StateProvince)": {
+                                              "*": {
+                                                "value": "Address[&15].TerritoryName[]"
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            },
+                                            "@(1,ISO3166-2)": {
+                                              "*": {
+                                                "value": "Address[&15].CountryISOAlpha2Code[]"
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            },
+                                            "@(1,Country)": {
+                                              "*": {
+                                                "lookupCode": "Address[&15].CountryISOAlpha2Code[]",
+                                                "value": "Address[&15].Country[]"
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "@(2,BillingSize)": {
+              "1": {
+                "@(4,Address)": {
+                  "*": {
+                    "value": {
+                      "AddressType": {
+                        "*": {
+                          "lookupCode": {
+                            "Billing": {
+                              "@4": {
+                                "AddressLine1": {
+                                  "*": {
+                                    "value": "Address[&9].AddressLine1[]"
+                                  },
+                                  "#10": "Address[&8].score[]",
+                                  "@(1,AddressLine2)": {
+                                    "*": {
+                                      "value": "Address[&10].AddressLine2[]"
+                                    }
+                                  },
+                                  "@(1,City)": {
+                                    "*": {
+                                      "value": "Address[&10].PrimaryTownName[]"
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  },
+                                  "@(1,POBox)": {
+                                    "*": {
+                                      "value": "Address[&10].POBox[]"
+                                    }
+                                  },
+                                  "@(1,Zip)": {
+                                    "*": {
+                                      "value": {
+                                        "Zip5": {
+                                          "*": {
+                                            "value": "Address[&13].FullZipCode[]"
+                                          }
+                                        },
+                                        "PostalCode": {
+                                          "*": {
+                                            "value": "Address[&13].FullPostalCode[]"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  },
+                                  "@(1,StateProvince)": {
+                                    "*": {
+                                      "value": "Address[&10].TerritoryName[]"
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  },
+                                  "@(1,ISO3166-2)": {
+                                    "*": {
+                                      "value": "Address[&10].CountryISOAlpha2Code[]"
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  },
+                                  "@(1,Country)": {
+                                    "*": {
+                                      "lookupCode": "Address[&10].CountryISOAlpha2Code[]",
+                                      "value": "Address[&10].Country[]"
+                                    },
+                                    "#-1": "Address[&9].score[]"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "*": {
+                "@(4,Address)": {
+                  "*": {
+                    "value": {
+                      "AddressType": {
+                        "*": {
+                          "lookupCode": {
+                            "Billing": {
+                              "@4": {
+                                "Primary": {
+                                  "*": {
+                                    "value": {
+                                      "true": {
+                                        "@9": {
+                                          "AddressLine1": {
+                                            "*": {
+                                              "value": "Address[&14].AddressLine1[]"
+                                            },
+                                            "#10": "Address[&13].score[]",
+                                            "@(1,AddressLine2)": {
+                                              "*": {
+                                                "value": "Address[&15].AddressLine2[]"
+                                              }
+                                            },
+                                            "@(1,City)": {
+                                              "*": {
+                                                "value": "Address[&15].PrimaryTownName[]"
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            },
+                                            "@(1,POBox)": {
+                                              "*": {
+                                                "value": "Address[&15].POBox[]"
+                                              }
+                                            },
+                                            "@(1,Zip)": {
+                                              "*": {
+                                                "value": {
+                                                  "Zip5": {
+                                                    "*": {
+                                                      "value": "Address[&18].FullZipCode[]"
+                                                    }
+                                                  },
+                                                  "PostalCode": {
+                                                    "*": {
+                                                      "value": "Address[&18].FullPostalCode[]"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            },
+                                            "@(1,StateProvince)": {
+                                              "*": {
+                                                "value": "Address[&15].TerritoryName[]"
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            },
+                                            "@(1,ISO3166-2)": {
+                                              "*": {
+                                                "value": "Address[&15].CountryISOAlpha2Code[]"
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            },
+                                            "@(1,Country)": {
+                                              "*": {
+                                                "lookupCode": "Address[&15].CountryISOAlpha2Code[]",
+                                                "value": "Address[&15].Country[]"
+                                              },
+                                              "#-1": "Address[&14].score[]"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Name": {
+          "*": {
+            "value": "SubjectName[]"
+          }
+        },
+        "DUNSNumber": {
+          "*": {
+            "value": "DUNSNumber[]"
+          }
+        },
+        "Phone": {
+          "*": {
+            "value": {
+              "Number": {
+                "0": {
+                  "value": "TelephoneNumber[]"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "Address": {
+        "*": {
+          "score": "=intSum(@(1,score))"
+        }
+      },
+      "Total": "=size(@(1,Address))"
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "Address": {
+        "*": {
+          "@": "Address[@(1,score)][]"
+        }
+      },
+      "*": {
+        "@": "&"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "Address": {
+        "*": {
+          "*": {
+            "score": {
+              "@1": "Address[]"
+            }
+          }
+        }
+      },
+      "*": {
+        "@": "&"
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "Address": {
+        "0": {
+          "AddressLine1": {
+            "0": "streetAddressLine1"
+          },
+          "AddressLine2": {
+            "0": "streetAddressLine2"
+          },
+          "CountryISOAlpha2Code": {
+            "0": "countryISOAlpha2Code"
+          },
+          "FullZipCode": {
+            "0": "FullZipCode"
+          },
+          "FullPostalCode": {
+            "0": "postalCode"
+          },
+          "PrimaryTownName": {
+            "0": "addressLocality"
+          },
+          "TerritoryName": {
+            "0": "addressRegion"
+          }
+        }
+      },
+      "#true": "isCleanseAndStandardizeInformationRequired",
+      "#auto": "inLanguage",
+      "#25": "candidateMaximumQuantity",
+      "#5": "confidenceLowerLevelThresholdValue",
+      "TelephoneNumber": {
+        "0": "telephoneNumber"
+      },
+      "SubjectName": {
+        "0": "name"
+      },
+      "DUNSNumber": {
+        "0": "duns"
+      },
+      "uri": "uri",
+      "type": "type"
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "postalCode": [
+        "=isPresent",
+        "@(1,FullZipCode)"
+      ]
+    }
+  },
+  {
+    "operation": "remove",
+    "spec": {
+      "FullZipCode": ""
+    }
+  }
+]

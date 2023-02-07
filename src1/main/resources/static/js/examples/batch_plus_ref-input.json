@@ -1,0 +1,704 @@
+{
+  "transactionDetail": {
+    "transactionID": "rrt-022a175208699e87e-a-eu-7456-24762785-2",
+    "transactionTimestamp": "2019-11-27T06:50:49.095Z",
+    "inLanguage": "en-US",
+    "serviceVersion": "1"
+  },
+  "inquiryDetail": {
+    "inLanguage": "auto",
+    "duns": "177360039",
+    "name": "Steris Corporation",
+    "address": {
+      "countryISOAlpha2Code": "US",
+      "addressLocality": "MENTOR",
+      "addressRegion": "OH",
+      "postalCode": "44060",
+      "streetAddressLine": {
+        "line1": "5960 HEISLEY RD"
+      }
+    },
+    "telephoneNumber": "4403542600",
+    "confidenceLowerLevelThresholdValue": 5,
+    "isCleanseAndStandardizeInformationRequired": true,
+    "productID": "cmpelf",
+    "productVersion": "v1"
+  },
+  "candidatesMatchedQuantity": 1,
+  "matchDataCriteria": "DUNS Number Lookup",
+  "matchCandidates": [
+    {
+      "displaySequence": 1,
+      "organization": {
+        "duns": "177360039",
+        "websiteAddress": [],
+        "dunsControlStatus": {
+          "operatingStatus": {
+            "description": "Active",
+            "dnbCode": 9074
+          },
+          "isMailUndeliverable": false
+        },
+        "primaryName": "STERIS CORPORATION",
+        "tradeStyleNames": [],
+        "telephone": [
+          {
+            "telephoneNumber": "4403542600",
+            "isUnreachable": false
+          }
+        ],
+        "primaryAddress": {
+          "addressCountry": {
+            "isoAlpha2Code": "US",
+            "name": "UNITED STATES"
+          },
+          "addressLocality": {
+            "name": "MENTOR"
+          },
+          "addressRegion": {
+            "name": null,
+            "abbreviatedName": "OH"
+          },
+          "postalCode": "44060",
+          "postalCodeExtension": "1834",
+          "streetAddress": {
+            "line1": "5960 HEISLEY RD",
+            "line2": null
+          }
+        },
+        "mailingAddress": {
+          "addressCountry": {
+            "isoAlpha2Code": "US",
+            "name": "UNITED STATES"
+          },
+          "addressLocality": {},
+          "addressRegion": {},
+          "postalCode": null,
+          "postalCodeExtension": null,
+          "streetAddress": {}
+        },
+        "registrationNumbers": [],
+        "mostSeniorPrincipals": [
+          {
+            "fullName": "WALTER M ROSEBROUGH"
+          }
+        ],
+        "isStandalone": false,
+        "corporateLinkage": {
+          "familytreeRolesPlayed": [
+            {
+              "description": "Parent / Headquarters",
+              "dnbCode": 9141
+            }
+          ]
+        }
+      },
+      "matchQualityInformation": {
+        "confidenceCode": 10,
+        "matchGrade": "AAAAAAAAAAA",
+        "matchGradeComponentsCount": 11,
+        "matchGradeComponents": [
+          {
+            "componentType": "Name",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Street Number",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Street Name",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "City",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "State",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "PO Box",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Phone",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Postal Code",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Density",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Uniqueness",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Sic",
+            "componentRating": "A"
+          }
+        ],
+        "matchDataProfile": null,
+        "matchDataProfileComponentsCount": null,
+        "matchDataProfileComponents": [],
+        "nameMatchScore": 0
+      }
+    }
+  ],
+  "cleanseAndStandardizeInformation": {},
+  "embeddedProduct": {
+    "productVersion": "1",
+    "productID": "cmpelf",
+    "organization": {
+      "businessEntityType": {
+        "description": "Corporation",
+        "dnbCode": 451
+      },
+      "incorporatedDate": "1985",
+      "duns": "177360039",
+      "activities": [
+        {
+          "description": "Mfg surgical appliances/supplies, Mfg electromedical equipment, Mfg surgical/medical instruments",
+          "language": {
+            "description": null,
+            "dnbCode": 331
+          }
+        }
+      ],
+      "controlOwnershipType": {
+        "description": "Publicly Traded Company",
+        "dnbCode": 9057
+      },
+      "primaryName": "Steris Corporation",
+      "defaultCurrency": "USD",
+      "formerPrimaryNames": [],
+      "startDate": "1985",
+      "registrationNumbers": [
+        {
+          "registrationNumber": "34-1482024",
+          "typeDescription": "Federal Taxpayer Identification Number (US)",
+          "typeDnBCode": 6863
+        }
+      ],
+      "summary": [],
+      "controlOwnershipDate": "2015",
+      "isStandalone": false,
+      "legalForm": {
+        "registrationLocation": {
+          "addressRegion": "OH"
+        }
+      },
+      "dunsControlStatus": {
+        "operatingStatus": {
+          "description": "Active",
+          "dnbCode": 9074
+        },
+        "isMarketable": true,
+        "isMailUndeliverable": false,
+        "isTelephoneDisconnected": false,
+        "isDelisted": false,
+        "subjectHandlingDetails": [],
+        "fullReportDate": "2019-10-25"
+      },
+      "telephone": [
+        {
+          "telephoneNumber": "4403542600",
+          "isdCode": "1",
+          "isUnreachable": false
+        }
+      ],
+      "fax": [],
+      "socioEconomicInformation": {},
+      "franchiseOperationType": {},
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Subsidiary",
+            "dnbCode": 9159
+          },
+          {
+            "description": "Domestic Ultimate",
+            "dnbCode": 12774
+          },
+          {
+            "description": "Parent/Headquarters",
+            "dnbCode": 9141
+          }
+        ],
+        "hierarchyLevel": 4,
+        "globalUltimateFamilyTreeMembersCount": 232,
+        "globalUltimate": {
+          "duns": "985678642",
+          "primaryName": "STERIS PUBLIC LIMITED COMPANY",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "Ireland",
+              "isoAlpha2Code": "IE",
+              "fipsCode": "EI"
+            },
+            "continentalRegion": {
+              "name": "Europe"
+            },
+            "addressLocality": {
+              "name": "DUBLIN"
+            },
+            "addressRegion": {},
+            "postalCode": null,
+            "streetAddress": {
+              "line1": "70 Sir John Rogerson's Quay",
+              "line2": null
+            }
+          }
+        },
+        "domesticUltimate": {
+          "duns": "177360039",
+          "primaryName": "Steris Corporation",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "United States",
+              "isoAlpha2Code": "US",
+              "fipsCode": "US"
+            },
+            "continentalRegion": {
+              "name": "North America"
+            },
+            "addressLocality": {
+              "name": "Mentor"
+            },
+            "addressRegion": {
+              "name": "Ohio",
+              "abbreviatedName": "OH"
+            },
+            "postalCode": "44060-1834",
+            "streetAddress": {
+              "line1": "5960 Heisley Rd",
+              "line2": null
+            }
+          }
+        },
+        "parent": {
+          "duns": "220418143",
+          "primaryName": "STERIS LIMITED",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "United Kingdom",
+              "isoAlpha2Code": "GB",
+              "fipsCode": "UK"
+            },
+            "continentalRegion": {
+              "name": "Europe"
+            },
+            "addressLocality": {
+              "name": "DERBY"
+            },
+            "addressRegion": {},
+            "postalCode": "DE21 6LY",
+            "streetAddress": {
+              "line1": "Rutherford House",
+              "line2": "Stephensons Way, Chaddesden"
+            }
+          }
+        },
+        "headQuarter": {}
+      },
+      "isAgent": null,
+      "thirdPartyFinancials": {},
+      "thirdPartyAssessment": [],
+      "isImporter": true,
+      "banks": [],
+      "isExporter": true,
+      "mostSeniorPrincipals": [
+        {
+          "givenName": "Walter",
+          "middleName": "M",
+          "familyName": "Rosebrough",
+          "fullName": "Walter M Rosebrough Junior",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "identificationNumber": null,
+          "gender": {},
+          "jobTitles": [
+            {
+              "title": "Chief Executive Officer"
+            },
+            {
+              "title": "President"
+            }
+          ],
+          "positions": [],
+          "managementResponsibilities": [
+            {
+              "description": "Chief Executive Officer",
+              "mrcCode": "A1A7"
+            },
+            {
+              "description": "President",
+              "mrcCode": "A1A6"
+            }
+          ]
+        }
+      ],
+      "currentPrincipals": [
+        {
+          "givenName": "MICHAEL",
+          "middleName": "J",
+          "familyName": "TOKICH",
+          "fullName": "MICHAEL J TOKICH",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "identificationNumber": null,
+          "gender": {},
+          "jobTitles": [
+            {
+              "title": "Chief Financial Officer"
+            }
+          ],
+          "positions": [],
+          "managementResponsibilities": [
+            {
+              "description": "Chief Financial Officer",
+              "mrcCode": "A1A9"
+            }
+          ]
+        },
+        {
+          "givenName": "KATHIE",
+          "middleName": null,
+          "familyName": "BARDWELL",
+          "fullName": "KATHIE BARDWELL",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "identificationNumber": null,
+          "gender": {},
+          "jobTitles": [
+            {
+              "title": "Officer"
+            }
+          ],
+          "positions": [],
+          "managementResponsibilities": [
+            {
+              "description": "Officer",
+              "mrcCode": "A199"
+            }
+          ]
+        },
+        {
+          "givenName": "J",
+          "middleName": "ADAM",
+          "familyName": "ZANGERLE",
+          "fullName": "J ADAM ZANGERLE",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "identificationNumber": null,
+          "gender": {},
+          "jobTitles": [
+            {
+              "title": "Secretary"
+            },
+            {
+              "title": "General Counsel"
+            }
+          ],
+          "positions": [],
+          "managementResponsibilities": [
+            {
+              "description": "Secretary",
+              "mrcCode": "A1B2"
+            },
+            {
+              "description": "General Counsel",
+              "mrcCode": "XDX1"
+            }
+          ]
+        },
+        {
+          "givenName": "LOYAL",
+          "middleName": "W",
+          "familyName": "WILSON",
+          "fullName": "LOYAL W WILSON",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "identificationNumber": null,
+          "gender": {},
+          "jobTitles": [
+            {
+              "title": "Principal"
+            }
+          ],
+          "positions": [],
+          "managementResponsibilities": [
+            {
+              "description": "Principal",
+              "mrcCode": "B1R2"
+            }
+          ]
+        },
+        {
+          "givenName": "MICHAEL",
+          "middleName": "B",
+          "familyName": "WOOD",
+          "fullName": "MICHAEL B WOOD",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "identificationNumber": null,
+          "gender": {},
+          "jobTitles": [
+            {
+              "title": "Principal"
+            }
+          ],
+          "positions": [],
+          "managementResponsibilities": [
+            {
+              "description": "Principal",
+              "mrcCode": "B1R2"
+            }
+          ]
+        }
+      ],
+      "dnbAssessment": {
+        "marketingRiskClass": {},
+        "historyRating": {
+          "description": "Clear",
+          "dnbCode": 9078
+        },
+        "marketingSegmentationCluster": 16
+      },
+      "financials": [
+        {
+          "financialStatementToDate": null,
+          "financialStatementDuration": null,
+          "informationScopeDescription": null,
+          "informationScopeDnBCode": null,
+          "reliabilityDescription": "Modelled",
+          "reliabilityDnBCode": 9094,
+          "unitCode": "Single Units",
+          "accountantName": null,
+          "yearlyRevenue": [
+            {
+              "value": 2007222251,
+              "currency": "USD",
+              "trend": []
+            }
+          ],
+          "netProfitLoss": [],
+          "netWorth": []
+        }
+      ],
+      "stockExchanges": [],
+      "operations": [
+        {
+          "description": "Manufactures orthopedic, prosthetic and surgical supplies, specializing in hospital or surgical sterilizers.  Manufactures electromedical and electrotherapeutic equipment, specializing in endoscopic equipment.  Manufactures surgical and medical instruments, specializing in medical diagnostic apparatus."
+        }
+      ],
+      "tradeStyleNames": [],
+      "mailingAddress": {},
+      "numberOfEmployees": [
+        {
+          "value": 843,
+          "minimumValue": null,
+          "maximumValue": null,
+          "employeeFiguresDate": null,
+          "informationScopeDescription": "Headquarters Only (Employs Here)",
+          "informationScopeDnBCode": 9068,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": [],
+          "trend": []
+        },
+        {
+          "value": 7655,
+          "minimumValue": null,
+          "maximumValue": null,
+          "employeeFiguresDate": null,
+          "informationScopeDescription": "Consolidated",
+          "informationScopeDnBCode": 9067,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": [
+            {
+              "employmentBasisDescription": "Principals",
+              "employmentBasisDnBCode": 9064
+            }
+          ],
+          "trend": [
+            {
+              "timePeriod": {
+                "description": "1-5 years",
+                "dnbCode": 13721
+              },
+              "growthRate": 27
+            }
+          ]
+        }
+      ],
+      "websiteAddress": [
+        {
+          "url": "www.steris.com",
+          "domainName": "steris.com"
+        }
+      ],
+      "capitalDetails": [],
+      "numberOfEmployeesHistory": [],
+      "registeredAddress": {},
+      "primaryAddress": {
+        "language": {},
+        "addressCountry": {
+          "name": "United States",
+          "isoAlpha2Code": "US",
+          "fipsCode": "US"
+        },
+        "continentalRegion": {
+          "name": "North America"
+        },
+        "addressLocality": {
+          "name": "Mentor"
+        },
+        "minorTownName": null,
+        "addressRegion": {
+          "name": "Ohio",
+          "abbreviatedName": "OH",
+          "fipsCode": "39"
+        },
+        "addressCounty": {
+          "name": "Lake",
+          "fipsCode": "085"
+        },
+        "postalCode": "44060-1834",
+        "postalCodePosition": {},
+        "streetNumber": null,
+        "streetName": null,
+        "streetAddress": {
+          "line1": "5960 Heisley Rd",
+          "line2": null
+        },
+        "postOfficeBox": {},
+        "latitude": 41.707949,
+        "longitude": -81.304893,
+        "geographicalPrecision": {
+          "description": "Street Address Centroid",
+          "dnbCode": 30257
+        },
+        "isRegisteredAddress": false,
+        "isResidentialAddress": null,
+        "statisticalArea": {
+          "cbsaName": "Cleveland-Elyria OH",
+          "cbsaCode": "17460",
+          "economicAreaOfInfluenceCode": "035",
+          "populationRank": {
+            "rankNumber": "7",
+            "rankDnBCode": 10959,
+            "rankDescription": "100,000 to 249,999"
+          }
+        },
+        "locationOwnership": {
+          "description": "Owns",
+          "dnbCode": 1128
+        },
+        "premisesArea": {
+          "measurement": 15944,
+          "unitDescription": "Square Foot",
+          "unitDnBCode": 3848,
+          "reliabilityDescription": "Modelled",
+          "reliabilityDnBCode": 9094
+        },
+        "isManufacturingLocation": true,
+        "congressionalDistricts": []
+      },
+      "competitors": [],
+      "industryCodes": [
+        {
+          "code": "334510",
+          "description": "Electromedical and Electrotherapeutic Apparatus Manufacturing",
+          "typeDescription": "North American Industry Classification System 2017",
+          "typeDnBCode": 30832,
+          "priority": 2
+        },
+        {
+          "code": "38410200",
+          "description": "Diagnostic apparatus, medical",
+          "typeDescription": "D&B Standard Industry Code",
+          "typeDnBCode": 3599,
+          "priority": 3
+        },
+        {
+          "code": "339113",
+          "description": "Surgical Appliance and Supplies Manufacturing",
+          "typeDescription": "North American Industry Classification System 2017",
+          "typeDnBCode": 30832,
+          "priority": 1
+        },
+        {
+          "code": "3845",
+          "description": "Mfg electromedical equipment",
+          "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+          "typeDnBCode": 399,
+          "priority": 2
+        },
+        {
+          "code": "38450111",
+          "description": "Endoscopic equipment, electromedical, nec",
+          "typeDescription": "D&B Standard Industry Code",
+          "typeDnBCode": 3599,
+          "priority": 2
+        },
+        {
+          "code": "1378",
+          "description": "Medical Equipment & Supplies Manufacturing",
+          "typeDescription": "D&B Hoovers Industry Code",
+          "typeDnBCode": 25838,
+          "priority": 1
+        },
+        {
+          "code": "3842",
+          "description": "Mfg surgical appliances/supplies",
+          "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+          "typeDnBCode": 399,
+          "priority": 1
+        },
+        {
+          "code": "38429919",
+          "description": "Sterilizers, hospital and surgical",
+          "typeDescription": "D&B Standard Industry Code",
+          "typeDnBCode": 3599,
+          "priority": 1
+        },
+        {
+          "code": "339112",
+          "description": "Surgical and Medical Instrument Manufacturing",
+          "typeDescription": "North American Industry Classification System 2017",
+          "typeDnBCode": 30832,
+          "priority": 3
+        },
+        {
+          "code": "D",
+          "description": "Manufacturing",
+          "typeDescription": "D&B Standard Major Industry Code",
+          "typeDnBCode": 24657,
+          "priority": 1
+        },
+        {
+          "code": "3250",
+          "description": "Manufacture of medical and dental instruments and supplies",
+          "typeDescription": "NACE Revision 2",
+          "typeDnBCode": 29104,
+          "priority": 1
+        },
+        {
+          "code": "3841",
+          "description": "Mfg surgical/medical instruments",
+          "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+          "typeDnBCode": 399,
+          "priority": 3
+        }
+      ]
+    },
+    "inLanguage": "en-US"
+  }
+}

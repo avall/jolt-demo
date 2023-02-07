@@ -1,0 +1,499 @@
+{
+  "globalUltimateDuns": "341020188",
+  "familyTreeMembers": [
+    {
+      "duns": "341020188",
+      "primaryName": "Deutsche Post AG",
+      "startDate": "1949",
+      "primaryAddress": {
+        "addressCountry": {
+          "name": "Germany",
+          "isoAlpha2Code": "DE"
+        },
+        "addressLocality": {
+          "name": "Bonn"
+        },
+        "addressRegion": {
+          "name": "Nordrhein-Westfalen"
+        },
+        "postalCode": "53113",
+        "streetAddress": {
+          "line1": "Charles-de-Gaulle-Str. 20"
+        }
+      },
+      "primaryIndustryCode": {
+        "usSicV4": "7389",
+        "usSicV4Description": "Business services"
+      },
+      "tradeStyleNames": [
+        {
+          "name": "DPDHL Deutsche Post DHL Group",
+          "priority": 1
+        }
+      ],
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Global Ultimate",
+            "dnbCode": 12775
+          },
+          {
+            "description": "Domestic Ultimate",
+            "dnbCode": 12774
+          },
+          {
+            "description": "Parent/Headquarters",
+            "dnbCode": 9141
+          }
+        ],
+        "hierarchyLevel": 1
+      },
+      "dunsControlStatus": {
+        "isMarketable": true
+      },
+      "numberOfEmployees": [
+        {
+          "value": 534370
+        }
+      ],
+      "financials": [
+        {
+          "yearlyRevenue": [
+            {
+              "value": 70079722308
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "duns": "315728639",
+      "primaryName": "Deutsche Post Beteiligungen Holding GmbH",
+      "startDate": "2003",
+      "primaryAddress": {
+        "addressCountry": {
+          "name": "Germany",
+          "isoAlpha2Code": "DE"
+        },
+        "addressLocality": {
+          "name": "Bonn"
+        },
+        "addressRegion": {
+          "name": "Nordrhein-Westfalen"
+        },
+        "postalCode": "53113",
+        "streetAddress": {
+          "line1": "Charles-de-Gaulle-Str. 20"
+        }
+      },
+      "primaryIndustryCode": {
+        "usSicV4": "6719",
+        "usSicV4Description": "Holding company"
+      },
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Subsidiary",
+            "dnbCode": 9159
+          },
+          {
+            "description": "Parent/Headquarters",
+            "dnbCode": 9141
+          }
+        ],
+        "hierarchyLevel": 2,
+        "parent": {
+          "duns": "341020188"
+        }
+      },
+      "dunsControlStatus": {
+        "isMarketable": true
+      },
+      "financials": [
+        {
+          "yearlyRevenue": [
+            {
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "duns": "550235840",
+      "primaryName": "Deutsche Post International B.V.",
+      "startDate": "1991-09-13",
+      "primaryAddress": {
+        "addressCountry": {
+          "name": "Netherlands",
+          "isoAlpha2Code": "NL"
+        },
+        "addressLocality": {
+          "name": "Maastricht"
+        },
+        "addressRegion": {
+          "name": "LIMBURG"
+        },
+        "postalCode": "6225 XT",
+        "streetAddress": {
+          "line1": "P. de Coubertinweg 7 N"
+        }
+      },
+      "primaryIndustryCode": {
+        "usSicV4": "6733",
+        "usSicV4Description": "Trust management"
+      },
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Subsidiary",
+            "dnbCode": 9159
+          },
+          {
+            "description": "Domestic Ultimate",
+            "dnbCode": 12774
+          },
+          {
+            "description": "Parent/Headquarters",
+            "dnbCode": 9141
+          }
+        ],
+        "hierarchyLevel": 3,
+        "parent": {
+          "duns": "315728639"
+        }
+      },
+      "dunsControlStatus": {
+        "isMarketable": true
+      },
+      "numberOfEmployees": [
+        {
+          "value": 8727
+        }
+      ],
+      "financials": [
+        {
+          "yearlyRevenue": [
+            {
+              "value": 2112981240
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "duns": "212214001",
+      "primaryName": "EXEL LIMITED",
+      "startDate": "2007-01-01",
+      "primaryAddress": {
+        "addressCountry": {
+          "name": "United Kingdom",
+          "isoAlpha2Code": "GB"
+        },
+        "addressLocality": {
+          "name": "BRACKNELL"
+        },
+        "addressCounty": {
+          "name": "Berkshire"
+        },
+        "postalCode": "RG12 1AN",
+        "streetAddress": {
+          "line1": "Ocean House",
+          "line2": "The Ring"
+        }
+      },
+      "primaryIndustryCode": {
+        "usSicV4": "7389",
+        "usSicV4Description": "Business services"
+      },
+      "tradeStyleNames": [
+        {
+          "name": "DHL",
+          "priority": 1
+        }
+      ],
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Subsidiary",
+            "dnbCode": 9159
+          },
+          {
+            "description": "Domestic Ultimate",
+            "dnbCode": 12774
+          },
+          {
+            "description": "Parent/Headquarters",
+            "dnbCode": 9141
+          }
+        ],
+        "hierarchyLevel": 4,
+        "parent": {
+          "duns": "550235840"
+        }
+      },
+      "dunsControlStatus": {
+        "isMarketable": true
+      },
+      "financials": [
+        {
+          "yearlyRevenue": [
+            {
+              "value": 14052375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "duns": "226006518",
+      "primaryName": "EXEL INVESTMENTS LIMITED",
+      "startDate": "1981",
+      "primaryAddress": {
+        "addressCountry": {
+          "name": "United Kingdom",
+          "isoAlpha2Code": "GB"
+        },
+        "addressLocality": {
+          "name": "BRACKNELL"
+        },
+        "addressCounty": {
+          "name": "Berkshire"
+        },
+        "postalCode": "RG12 1AX",
+        "streetAddress": {
+          "line1": "Ocean House",
+          "line2": "The Ring"
+        }
+      },
+      "primaryIndustryCode": {
+        "usSicV4": "6719",
+        "usSicV4Description": "Holding company"
+      },
+      "tradeStyleNames": [
+        {
+          "name": "Dhl",
+          "priority": 1
+        }
+      ],
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Subsidiary",
+            "dnbCode": 9159
+          },
+          {
+            "description": "Parent/Headquarters",
+            "dnbCode": 9141
+          }
+        ],
+        "hierarchyLevel": 5,
+        "parent": {
+          "duns": "212214001"
+        }
+      },
+      "dunsControlStatus": {
+        "isMarketable": true
+      },
+      "financials": [
+        {
+          "yearlyRevenue": [
+            {
+              "value": 124830701
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "duns": "211983523",
+      "primaryName": "DHL SUPPLY CHAIN LIMITED",
+      "startDate": "2011-01-01",
+      "primaryAddress": {
+        "addressCountry": {
+          "name": "United Kingdom",
+          "isoAlpha2Code": "GB"
+        },
+        "addressLocality": {
+          "name": "MILTON KEYNES"
+        },
+        "addressCounty": {
+          "name": "Buckinghamshire"
+        },
+        "postalCode": "MK9 1EQ",
+        "streetAddress": {
+          "line1": "Solstice House",
+          "line2": "251 Midsummer Boulevard"
+        }
+      },
+      "primaryIndustryCode": {
+        "usSicV4": "4213",
+        "usSicV4Description": "Trucking operator-nonlocal"
+      },
+      "tradeStyleNames": [
+        {
+          "name": "DHL",
+          "priority": 1
+        }
+      ],
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Subsidiary",
+            "dnbCode": 9159
+          },
+          {
+            "description": "Parent/Headquarters",
+            "dnbCode": 9141
+          }
+        ],
+        "hierarchyLevel": 6,
+        "parent": {
+          "duns": "226006518"
+        }
+      },
+      "dunsControlStatus": {
+        "isMarketable": true
+      },
+      "numberOfEmployees": [
+        {
+          "value": 648
+        }
+      ],
+      "financials": [
+        {
+          "yearlyRevenue": [
+            {
+              "value": 4202642853
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "duns": "211911557",
+      "primaryName": "EXEL UK LIMITED",
+      "startDate": "1963",
+      "primaryAddress": {
+        "addressCountry": {
+          "name": "United Kingdom",
+          "isoAlpha2Code": "GB"
+        },
+        "addressLocality": {
+          "name": "BRACKNELL"
+        },
+        "addressCounty": {
+          "name": "Berkshire"
+        },
+        "postalCode": "RG12 1AX",
+        "streetAddress": {
+          "line1": "Ocean House",
+          "line2": "The Ring"
+        }
+      },
+      "primaryIndustryCode": {
+        "usSicV4": "4213",
+        "usSicV4Description": "Trucking operator-nonlocal"
+      },
+      "tradeStyleNames": [
+        {
+          "name": "DHL",
+          "priority": 1
+        }
+      ],
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Subsidiary",
+            "dnbCode": 9159
+          },
+          {
+            "description": "Parent/Headquarters",
+            "dnbCode": 9141
+          }
+        ],
+        "hierarchyLevel": 7,
+        "parent": {
+          "duns": "211983523"
+        }
+      },
+      "dunsControlStatus": {
+        "isMarketable": true
+      },
+      "financials": [
+        {
+          "yearlyRevenue": [
+            {
+              "value": 21384273
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "duns": "647249531",
+      "primaryName": "Exel Uk Limited",
+      "primaryAddress": {
+        "addressCountry": {
+          "name": "United Kingdom",
+          "isoAlpha2Code": "GB"
+        },
+        "addressLocality": {
+          "name": "GLASGOW"
+        },
+        "postalCode": "G75 0TW",
+        "streetAddress": {
+          "line1": "Stroud Rd",
+          "line2": "East Kilbride"
+        }
+      },
+      "primaryIndustryCode": {
+        "usSicV4": "4789",
+        "usSicV4Description": "Transportation services"
+      },
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Branch/Division",
+            "dnbCode": 9140
+          }
+        ],
+        "hierarchyLevel": 8,
+        "parent": {
+          "duns": "211911557"
+        }
+      },
+      "dunsControlStatus": {
+        "isMarketable": false
+      },
+      "numberOfEmployees": [
+        {
+          "value": 6
+        }
+      ],
+      "financials": [
+        {
+          "yearlyRevenue": [
+            {
+              "value": 461131
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "links": {
+    "last": "https://plus.dnb.com/v1/familyTreeUpward/647249531?page%5Bnumber%5D=1&page%5Bsize%5D=1000",
+    "self": "https://plus.dnb.com/v1/familyTreeUpward/647249531?page%5Bnumber%5D=1&page%5Bsize%5D=1000",
+    "first": "https://plus.dnb.com/v1/familyTreeUpward/647249531?page%5Bnumber%5D=1&page%5Bsize%5D=1000"
+  },
+  "transactionDetail": {
+    "transactionID": "rrt-0bb27f4e6dcc68a88-a-eu-309-30643354-16",
+    "transactionTimestamp": "2020-05-06T09:42:05.813Z",
+    "inLanguage": "en-US",
+    "serviceVersion": "1"
+  },
+  "inquiryDetail": {
+    "duns": "647249531"
+  }
+}

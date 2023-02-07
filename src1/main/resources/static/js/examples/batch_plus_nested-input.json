@@ -1,0 +1,596 @@
+{
+  "transactionDetail": {
+    "transactionID": "rrt-03d26a3b33bb3ba4f-c-ea-2556-83924080-55",
+    "transactionTimestamp": "2018-05-17T17:59:55.991Z",
+    "inLanguage": "en-US",
+    "serviceVersion": "1"
+  },
+  "inquiryDetail": {
+    "name": "Harris Crucial Security",
+    "address": {
+      "countryISOAlpha2Code": "US",
+      "addressLocality": "Chantilly",
+      "addressRegion": "VA",
+      "postalCode": "20151",
+      "streetAddressLine": {
+        "line1": "14900 Conference Center Drive Suite 225",
+        "line2": ""
+      }
+    },
+    "telephoneNumber": "",
+    "productID": "cmpelk",
+    "productVersion": "v2"
+  },
+  "candidatesMatchedQuantity": 1,
+  "matchDataCriteria": "Name and Address Lookup",
+  "matchCandidates": [
+    {
+      "displaySequence": 1,
+      "organization": {
+        "duns": "001588297",
+        "websiteAddress": [],
+        "dunsControlStatus": {
+          "operatingStatus": {
+            "description": "Active",
+            "dnbCode": 9074
+          },
+          "isMailUndeliverable": false
+        },
+        "primaryName": "CRUCIAL SECURITY, INC.",
+        "tradeStyleNames": [],
+        "telephone": [
+          {
+            "telephoneNumber": "7034838000",
+            "isUnreachable": false
+          }
+        ],
+        "primaryAddress": {
+          "addressCountry": {
+            "isoAlpha2Code": "US",
+            "name": "UNITED STATES"
+          },
+          "addressLocality": {
+            "name": "HERNDON"
+          },
+          "addressRegion": {
+            "name": null,
+            "abbreviatedName": "VA"
+          },
+          "postalCode": "20171",
+          "postalCodeExtension": "2824",
+          "streetAddress": {
+            "line1": "2235 MONROE ST",
+            "line2": null
+          }
+        },
+        "mailingAddress": {},
+        "registrationNumbers": [],
+        "mostSeniorPrincipals": [
+          {
+            "fullName": "CHARLY  QUILLIN"
+          }
+        ],
+        "isStandalone": false,
+        "corporateLinkage": {
+          "familytreeRolesPlayed": [
+            {
+              "description": "Subsidiary",
+              "dnbCode": 9159
+            }
+          ]
+        }
+      },
+      "matchQualityInformation": {
+        "confidenceCode": 8,
+        "matchGrade": "BAAAAZZAFZF",
+        "matchGradeComponentsCount": 11,
+        "matchGradeComponents": [
+          {
+            "componentType": "Name",
+            "componentRating": "B"
+          },
+          {
+            "componentType": "Street Number",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Street Name",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "City",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "State",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "PO Box",
+            "componentRating": "Z"
+          },
+          {
+            "componentType": "Phone",
+            "componentRating": "Z"
+          },
+          {
+            "componentType": "Postal Code",
+            "componentRating": "A"
+          },
+          {
+            "componentType": "Density",
+            "componentRating": "F"
+          },
+          {
+            "componentType": "Uniqueness",
+            "componentRating": "Z"
+          },
+          {
+            "componentType": "Sic",
+            "componentRating": "F"
+          }
+        ],
+        "matchDataProfile": "0002020202989800000000989898",
+        "matchDataProfileComponentsCount": 14,
+        "matchDataProfileComponents": [
+          {
+            "componentType": "Name",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "Street Number",
+            "componentValue": "02"
+          },
+          {
+            "componentType": "Street Name",
+            "componentValue": "02"
+          },
+          {
+            "componentType": "City",
+            "componentValue": "02"
+          },
+          {
+            "componentType": "State",
+            "componentValue": "02"
+          },
+          {
+            "componentType": "PO Box",
+            "componentValue": "98"
+          },
+          {
+            "componentType": "Phone",
+            "componentValue": "98"
+          },
+          {
+            "componentType": "Postal Code",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "DUNS",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "SIC",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "Density",
+            "componentValue": "00"
+          },
+          {
+            "componentType": "Uniqueness",
+            "componentValue": "98"
+          },
+          {
+            "componentType": "National ID",
+            "componentValue": "98"
+          },
+          {
+            "componentType": "URL",
+            "componentValue": "98"
+          }
+        ],
+        "nameMatchScore": 37
+      }
+    }
+  ],
+  "cleanseAndStandardizeInformation": {},
+  "embeddedProduct": {
+    "productVersion": "2",
+    "productID": "cmpelk",
+    "organization": {
+      "businessEntityType": {
+        "description": "Corporation",
+        "dnbCode": 451
+      },
+      "duns": "001588297",
+      "controlOwnershipType": {},
+      "primaryName": "Crucial Security, Inc.",
+      "primaryAddress": {
+        "language": {},
+        "addressCountry": {
+          "name": "United States",
+          "isoAlpha2Code": "US",
+          "fipsCode": "US"
+        },
+        "continentalRegion": {
+          "name": "North America"
+        },
+        "addressLocality": {
+          "name": "HERNDON"
+        },
+        "minorTownName": null,
+        "addressRegion": {
+          "name": "Virginia",
+          "abbreviatedName": "VA",
+          "fipsCode": "51"
+        },
+        "addressCounty": {
+          "name": "FAIRFAX",
+          "fipsCode": "059"
+        },
+        "postalCode": "201712824",
+        "postalCodePosition": {},
+        "streetNumber": null,
+        "streetName": null,
+        "streetAddress": {
+          "line1": "2235 MONROE ST",
+          "line2": null
+        },
+        "postOfficeBox": {},
+        "latitude": 38.951177,
+        "longitude": -77.389456,
+        "geographicalPrecision": {
+          "description": "Street Address Centroid",
+          "dnbCode": 30257
+        },
+        "isRegisteredAddress": false,
+        "isResidentialAddress": null,
+        "statisticalArea": {
+          "cbsaName": "Washington-Arlington-Alexandria DC-VA-MD-WV",
+          "cbsaCode": "47900",
+          "economicAreaOfInfluenceCode": "174",
+          "populationRank": {
+            "rankNumber": "9",
+            "rankDnBCode": 10961,
+            "rankDescription": "500,000 +"
+          }
+        },
+        "locationOwnership": {
+          "description": "Leases",
+          "dnbCode": 1130
+        },
+        "premisesArea": {
+          "measurement": 6000,
+          "unitDescription": "Square Foot",
+          "unitDnBCode": 3848,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092
+        },
+        "isManufacturingLocation": null
+      },
+      "socioEconomicInformation": {
+        "isMinorityOwned": null,
+        "isSmallBusiness": true
+      },
+      "startDate": "2000",
+      "registrationNumbers": [
+        {
+          "registrationNumber": "54-2000785",
+          "typeDescription": "Federal Taxpayer Identification Number (US)",
+          "typeDnBCode": 6863
+        }
+      ],
+      "controlOwnershipDate": "2017",
+      "isStandalone": false,
+      "dunsControlStatus": {
+        "operatingStatus": {
+          "description": "Active",
+          "dnbCode": 9074
+        },
+        "isMarketable": true,
+        "isMailUndeliverable": false,
+        "isTelephoneDisconnected": false,
+        "isDelisted": false,
+        "subjectHandlingDetails": [],
+        "fullReportDate": "2018-03-03"
+      },
+      "telephone": [
+        {
+          "telephoneNumber": "7034838000",
+          "isdCode": "1",
+          "isUnreachable": false
+        }
+      ],
+      "fax": [],
+      "financials": [
+        {
+          "financialStatementToDate": "2017-09-01",
+          "financialStatementDuration": null,
+          "informationScopeDescription": null,
+          "informationScopeDnBCode": null,
+          "reliabilityDescription": "Modelled",
+          "reliabilityDnBCode": 9094,
+          "unitCode": "Single Units",
+          "accountantName": null,
+          "yearlyRevenue": [
+            {
+              "value": 10362625,
+              "currency": "USD",
+              "trend": []
+            }
+          ]
+        }
+      ],
+      "corporateLinkage": {
+        "familytreeRolesPlayed": [
+          {
+            "description": "Subsidiary",
+            "dnbCode": 9159
+          }
+        ],
+        "hierarchyLevel": 3,
+        "globalUltimateFamilyTreeMembersCount": 47,
+        "globalUltimate": {
+          "duns": "078628925",
+          "primaryName": "Veritas Capital Fund Management, L.L.C.",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "United States",
+              "isoAlpha2Code": "US",
+              "fipsCode": "US"
+            },
+            "continentalRegion": {
+              "name": "North America"
+            },
+            "addressLocality": {
+              "name": "NEW YORK"
+            },
+            "addressRegion": {
+              "name": "New York",
+              "abbreviatedName": "NY"
+            },
+            "postalCode": "100190065",
+            "streetAddress": {
+              "line1": "9 W 57TH ST FL 29",
+              "line2": null
+            }
+          }
+        },
+        "domesticUltimate": {
+          "duns": "078628925",
+          "primaryName": "Veritas Capital Fund Management, L.L.C.",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "United States",
+              "isoAlpha2Code": "US",
+              "fipsCode": "US"
+            },
+            "continentalRegion": {
+              "name": "North America"
+            },
+            "addressLocality": {
+              "name": "NEW YORK"
+            },
+            "addressRegion": {
+              "name": "New York",
+              "abbreviatedName": "NY"
+            },
+            "postalCode": "100190065",
+            "streetAddress": {
+              "line1": "9 W 57TH ST FL 29",
+              "line2": null
+            }
+          }
+        },
+        "parent": {
+          "duns": "080624890",
+          "primaryName": "Peraton Corp.",
+          "primaryAddress": {
+            "addressCountry": {
+              "name": "United States",
+              "isoAlpha2Code": "US",
+              "fipsCode": "US"
+            },
+            "continentalRegion": {
+              "name": "North America"
+            },
+            "addressLocality": {
+              "name": "HERNDON"
+            },
+            "addressRegion": {
+              "name": "Virginia",
+              "abbreviatedName": "VA"
+            },
+            "postalCode": "201706008",
+            "streetAddress": {
+              "line1": "12975 WORLDGATE DR STE 700",
+              "line2": null
+            }
+          }
+        },
+        "headQuarter": {}
+      },
+      "isAgent": null,
+      "isImporter": null,
+      "thirdPartyAssessment": [],
+      "isExporter": null,
+      "numberOfEmployees": [
+        {
+          "value": 110,
+          "informationScopeDescription": "Consolidated",
+          "informationScopeDnBCode": 9067,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": [],
+          "trend": []
+        },
+        {
+          "value": 110,
+          "informationScopeDescription": "Individual",
+          "informationScopeDnBCode": 9066,
+          "reliabilityDescription": "Actual",
+          "reliabilityDnBCode": 9092,
+          "employeeCategories": [],
+          "trend": []
+        }
+      ],
+      "stockExchanges": [],
+      "mostSeniorPrincipals": [
+        {
+          "givenName": "Charles",
+          "familyName": "Quillin",
+          "fullName": "Charles Quillin",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "gender": null,
+          "jobTitles": [
+            {
+              "title": "President"
+            }
+          ],
+          "managementResponsibilities": [
+            {
+              "description": "President",
+              "mrcCode": "A1A6"
+            }
+          ]
+        }
+      ],
+      "mailingAddress": {},
+      "tradeStyleNames": [
+        {
+          "name": "Harris IT Services",
+          "priority": 1
+        }
+      ],
+      "currentPrincipals": [
+        {
+          "givenName": "Steven",
+          "familyName": "Moore",
+          "fullName": "Steven Moore",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "gender": null,
+          "jobTitles": [],
+          "managementResponsibilities": []
+        },
+        {
+          "givenName": "Robert",
+          "familyName": "Brown",
+          "fullName": "Robert Brown",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "gender": null,
+          "jobTitles": [],
+          "managementResponsibilities": []
+        },
+        {
+          "givenName": "Walter",
+          "familyName": "Borkowsky",
+          "fullName": "Walter Borkowsky",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "gender": null,
+          "jobTitles": [
+            {
+              "title": "Senior Manager"
+            }
+          ],
+          "managementResponsibilities": [
+            {
+              "description": "Senior Manager",
+              "mrcCode": "X7X7"
+            }
+          ]
+        },
+        {
+          "givenName": "John",
+          "familyName": "Irvine",
+          "fullName": "John Irvine",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "gender": null,
+          "jobTitles": [],
+          "managementResponsibilities": []
+        },
+        {
+          "givenName": "Robert",
+          "familyName": "Riemenschneider",
+          "fullName": "Robert Riemenschneider",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "gender": null,
+          "jobTitles": [],
+          "managementResponsibilities": []
+        },
+        {
+          "givenName": "Steve",
+          "familyName": "Harper",
+          "fullName": "Steve Harper",
+          "namePrefix": null,
+          "nameSuffix": null,
+          "gender": null,
+          "jobTitles": [
+            {
+              "title": "Manager"
+            }
+          ],
+          "managementResponsibilities": [
+            {
+              "description": "Principal Manager",
+              "mrcCode": "Z799"
+            }
+          ]
+        }
+      ],
+      "registeredAddress": {},
+      "websiteAddress": [],
+      "industryCodes": [
+        {
+          "code": "541330",
+          "description": "Engineering Services",
+          "typeDescription": "North American Industry Classification System 2017",
+          "typeDnBCode": 30832,
+          "priority": 1
+        },
+        {
+          "code": "1861",
+          "description": "Engineering Services",
+          "typeDescription": "D&B Hoovers Industry Code",
+          "typeDnBCode": 25838,
+          "priority": 1
+        },
+        {
+          "code": "8711",
+          "description": "Engineering services",
+          "typeDescription": "US Standard Industry Code 1987 - 4 digit",
+          "typeDnBCode": 399,
+          "priority": 1
+        },
+        {
+          "code": "87119903",
+          "description": "Consulting engineer",
+          "typeDescription": "D&B Standard Industry Code",
+          "typeDnBCode": 3599,
+          "priority": 1
+        },
+        {
+          "code": "I",
+          "description": "Services",
+          "typeDescription": "D&B Standard Major Industry Code",
+          "typeDnBCode": 24657,
+          "priority": 1
+        },
+        {
+          "code": "7100",
+          "description": "Architectural and engineering activities; technical testing and analysis",
+          "typeDescription": "NACE Revision 2",
+          "typeDnBCode": 29104,
+          "priority": 1
+        }
+      ]
+    },
+    "inLanguage": "en-US"
+  }
+}

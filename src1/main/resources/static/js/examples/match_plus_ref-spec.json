@@ -1,0 +1,185 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "data": {
+        "matchCandidates": {
+          "*": {
+            "displaySequence": "[&1].attributes.MatchQuality[0].value.DisplaySequence[].value",
+            "@(4,context.goldenId)": [
+              "[&1].crosswalks[0].goldenId",
+              "[&1].attributes.entityURI[].value"
+            ],
+            "@(4,context.dtssCustomerTenantId)": "[&1].attributes.DtssCustomerTenantId[].value",
+            "@(4,context.entityType)": "[&1].type",
+            "#DnB": "[&1].attributes.DnBType[].value",
+            "#Real Time Plus": "[&1].attributes.DnBSource[].value",
+            "organization": {
+              "duns": "[&2].attributes.DUNSNumber[].value",
+              "dunsControlStatus": {
+                "operatingStatus": {
+                  "description": "[&4].attributes.OrganizationDetail[0].value.OperatingStatus[].value"
+                }
+              },
+              "primaryName": "[&2].attributes.Name[].value",
+              "telephone": {
+                "*": {
+                  "telephoneNumber": ["[&4].attributes.Phone[&1].value.Number[].value", "xxx"],
+                  "#Phone": "[&4].attributes.Phone[&1].value.Type[].value",
+                  "#true": "[&4].attributes.Phone[&1].value.PrimaryPhoneFlag[].value",
+                  "isUnreachable": "[&4].attributes.Phone[&1].value.Unreachable[].value"
+                }
+              },
+              "corporateLinkage": {
+                "familytreeRolesPlayed": {
+                  "*": {
+                    "description": "[&5].attributes.OrganizationDetail[0].value.MemberRole[].value"
+                  }
+                }
+              },
+              "primaryAddress": {
+                "streetAddress": {
+                  "line1": {
+                    "@": "[&5].attributes.Address[0].value.AddressLine1[].value",
+                    "@(1,line2)": "[&5].attributes.Address[0].value.AddressLine2[].value",
+                    "@(2,postalCode)": "[&5].attributes.Address[0].value.Zip[].value.PostalCode[].value",
+                    "@(2,addressLocality)": {
+                      "name": "[&6].attributes.Address[0].value.City[].value"
+                    },
+                    "@(2,addressCountry)": {
+                      "name": "[&6].attributes.Address[0].value.Country[].value"
+                    },
+                    "@(2,addressRegion)": {
+                      "abbreviatedName": "[&6].attributes.Address[0].value.StateProvince[].value"
+                    },
+                    "#true": "[&5].attributes.Address[0].value.Primary[].value",
+                    "#Shipping": "[&5].attributes.Address[0].value.AddressType[].value"
+                  }
+                }
+              },
+              "mailingAddress": {
+                "streetAddress": {
+                  "line1": {
+                    "@": "[&5].attributes.Address[1].value.AddressLine1[].value",
+                    "@(1,line2)": "[&5].attributes.Address[1].value.AddressLine2[].value",
+                    "@(2,postalCode)": "[&5].attributes.Address[1].value.Zip[].value.PostalCode[].value",
+                    "@(2,addressLocality)": {
+                      "name": "[&6].attributes.Address[1].value.City[].value"
+                    },
+                    "@(2,addressCountry)": {
+                      "name": "[&6].attributes.Address[1].value.Country[].value"
+                    },
+                    "@(2,addressRegion)": {
+                      "abbreviatedName": "[&6].attributes.Address[1].value.StateProvince[].value"
+                    },
+                    "#Mailing": "[&5].attributes.Address[1].value.AddressType[].value"
+                  }
+                }
+              }
+            },
+            "matchQualityInformation": {
+              "confidenceCode": {
+                "10|9": {
+                  "$": "[&4].attributes.MatchQuality[0].value.ConfidenceCode[].value",
+                  "@(3,organization)": {
+                    "dunsControlStatus": {
+                      "operatingStatus": {
+                        "description": {
+                          "Active": {
+                            "#true": "[&9].attributes.AutoMatchFlag[].value"
+                          },
+                          "*": {
+                            "#true": "[&9].attributes.SuspectMatchFlag[].value"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "*": {
+                  "#true": "[&4].attributes.SuspectMatchFlag[].value",
+                  "$": "[&4].attributes.MatchQuality[0].value.ConfidenceCode[].value"
+                }
+              },
+              "matchGrade": "[&2].attributes.MatchQuality[0].value.MatchGrade[].value",
+              "matchDataProfileComponents": {
+                "*": {
+                  "componentType": {
+                    "Name": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.NameProfileCode[].value"
+                    },
+                    "Street Number": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.StreetNumberProfileCode[].value"
+                    },
+                    "Street Name": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.StreetNameProfileCode[].value"
+                    },
+                    "City": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.CityProfileCode[].value"
+                    },
+                    "State": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.StateProvinceProfileCode[].value"
+                    },
+                    "PO Box": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.POBoxProfileCode[].value"
+                    },
+                    "Phone": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.PhoneProfileCode[].value"
+                    },
+                    "Postal Code": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.ZIPProfileCode[].value"
+                    },
+                    "SIC": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.SICProfileCode[].value"
+                    },
+                    "Density": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.DensityProfileCode[].value"
+                    },
+                    "Uniqueness": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.UniquenessProfileCode[].value"
+                    },
+                    "DUNS": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.DUNSProfileCode[].value"
+                    },
+                    "National ID": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.NationalIDProfileCode[].value"
+                    },
+                    "URL": {
+                      "@(2,componentValue)": "[&6].attributes.MatchQuality[0].value.URLProfileCode[].value"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-default-beta",
+    "spec": {
+      "*": {
+        "crosswalks": {
+          "*": {
+            "type": "configuration/sources/DnB",
+            "value": "=concat(@(3,attributes.DUNSNumber[0].value),'-',@(1,goldenId))"
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "remove",
+    "spec": {
+      "*": {
+        "crosswalks": {
+          "*": {
+            "goldenId": "",
+            "dunsvalue": ""
+          }
+        }
+      }
+    }
+  }
+]
